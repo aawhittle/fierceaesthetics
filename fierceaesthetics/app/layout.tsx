@@ -1,10 +1,10 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Your Brand Name | Beauty",
+  title: "Fierce Aesthetics | Beauty",
   description: "Elegant beauty services. Book your appointment today.",
   openGraph: {
-    title: "Your Brand Name | Beauty",
+    title: "Fierce Aesthetics | Beauty",
     description: "Elegant beauty services. Book your appointment today.",
     type: "website",
   },
