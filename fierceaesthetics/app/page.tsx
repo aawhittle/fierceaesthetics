@@ -116,6 +116,9 @@ export default function Page() {
 
   return (
     <main className="min-h-screen">
+      <div className="bg-[rgb(var(--gold))] text-black p-6 text-3xl font-bold">
+          Tailwind is working ✅
+      </div>
       {/* Subtle gold/white glow */}
       <div
         aria-hidden="true"
