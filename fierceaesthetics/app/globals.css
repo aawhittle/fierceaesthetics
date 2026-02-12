@@ -1,7 +1,12 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-html {
-  scroll-behavior: smooth;
+:root{
+  --bg: 10 10 12;
+  --card: 16 16 20;
+  --text: 245 245 245;
+  --muted: 170 170 175;
+  --gold: 212 175 55;
 }
+
+html { scroll-behavior: smooth; }
+body { background: rgb(var(--bg)); color: rgb(var(--text)); }
