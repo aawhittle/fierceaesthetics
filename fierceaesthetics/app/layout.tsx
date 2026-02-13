@@ -1,5 +1,6 @@
 import "./globals.css";
 import { Playfair_Display, Inter } from "next/font/google";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
