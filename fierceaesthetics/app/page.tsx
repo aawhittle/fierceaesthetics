@@ -111,8 +111,9 @@ export default function Page() {
             ].map((s) => (
               <div
                 key={s.name}
-                className="flex justify-between items-center p-7 rounded-3xl 
-                bg-white/75 backdrop-blur-md
+                className="flex justify-between items-center p-7 rounded-3xl
+                bg-white md:bg-white/80
+                md:backdrop-blur-md
                 border border-black/5
                 shadow-[0_20px_60px_rgba(0,0,0,0.05)]
                 transition-all duration-300 hover:shadow-[0_25px_80px_rgba(0,0,0,0.08)] hover:-translate-y-1"
