@@ -1,14 +1,23 @@
 @import "tailwindcss";
 
 :root{
-  --bg: 10 10 12;
-  --card: 16 16 20;
-  --text: 245 245 245;
-  --muted: 170 170 175;
-  --gold: 212 175 55;
+  --paper: 249 247 243;
+  --paper-2: 245 241 234;
+  --ink: 20 20 22;
+  --muted: 92 92 98;
+  --gold: 188 150 72;
 }
 
 html { scroll-behavior: smooth; }
+
+body{
+  color: rgb(var(--ink));
+  background:
+    radial-gradient(900px 500px at 15% 10%, rgba(188,150,72,0.10), transparent 60%),
+    radial-gradient(900px 500px at 85% 15%, rgba(0,0,0,0.06), transparent 55%),
+    linear-gradient(180deg, rgb(var(--paper)) 0%, rgb(var(--paper-2)) 100%);
+}
+
 body::before{
   content: "";
   position: fixed;
@@ -16,7 +25,7 @@ body::before{
   pointer-events: none;
   background-image: url("/botanical-wallpaper.svg");
   background-size: 900px 900px;
-  opacity: 0.35;
+  opacity: 0.6;            /* TEMP: make it obvious */
   mix-blend-mode: multiply;
 }
 

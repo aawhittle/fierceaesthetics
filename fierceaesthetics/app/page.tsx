@@ -1,6 +1,6 @@
 export default function Page() {
   return (
-    <main className="min-h-screen bg-neutral-950 text-neutral-100">
+    <main className="min-h-screen text-neutral-950">
       <div className="max-w-5xl mx-auto px-6 py-20">
 
        <section className="space-y-6">
