@@ -1,19 +1,31 @@
 import "./globals.css";
+import { Playfair_Display, Inter } from "next/font/google";
 
-export const metadata = {
-  title: "Fierce Aesthetics | Beauty",
-  description: "Elegant beauty services. Book your appointment today.",
-  openGraph: {
-    title: "Fierce Aesthetics | Beauty",
-    description: "Elegant beauty services. Book your appointment today.",
-    type: "website",
-  },
-};
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  variable: "--font-playfair",
+  display: "swap",
+});
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+});
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html
+      lang="en"
+      className={`${playfair.variable} ${inter.variable}`}
+    >
+      <body className="font-[var(--font-inter)] antialiased">
+        {children}
+      </body>
     </html>
   );
 }

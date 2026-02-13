@@ -10,3 +10,16 @@
 
 html { scroll-behavior: smooth; }
 body { background: rgb(var(--bg)); color: rgb(var(--text)); }
+
+/* Headings use Playfair */
+h1, h2, h3, h4 {
+  font-family: var(--font-playfair);
+  letter-spacing: -0.01em;
+}
+
+/* Small section labels feel editorial */
+.section-label {
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
