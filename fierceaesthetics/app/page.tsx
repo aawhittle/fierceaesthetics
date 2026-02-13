@@ -231,7 +231,7 @@ export default function Page() {
         </a>
 
         <a
-          href="https://www.tiktok.com/@YOURHANDLE"
+          href="http://www.tiktok.com/@fierceaestheticsuk"
           target="_blank"
           rel="noreferrer"
           aria-label="TikTok"
