@@ -26,6 +26,7 @@ export default function RootLayout({
     >
       <body className="font-[var(--font-inter)] antialiased">
         {children}
+        <SpeedInsights />
       </body>
     </html>
   );
