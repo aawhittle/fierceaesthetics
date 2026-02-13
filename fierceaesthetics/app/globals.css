@@ -9,7 +9,16 @@
 }
 
 html { scroll-behavior: smooth; }
-body { background: rgb(var(--bg)); color: rgb(var(--text)); }
+body::before{
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image: url("/botanical-wallpaper.svg");
+  background-size: 900px 900px;
+  opacity: 0.35;
+  mix-blend-mode: multiply;
+}
 
 /* Headings use Playfair */
 h1, h2, h3, h4 {
