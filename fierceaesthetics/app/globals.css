@@ -19,15 +19,26 @@ body{
 }
 
 body::before{
-  content: "";
+  content:"";
   position: fixed;
   inset: 0;
   pointer-events: none;
-  background-image: url("/botanical-wallpaper.svg");
-  background-size: 900px 900px;
-  opacity: 0.32;            /* TEMP: make it obvious */
-  filter: blur(0.2px);  
+  z-index: 0;
+
+  background:
+    url("/botanical-left.svg") left bottom / 520px auto no-repeat,
+    url("/botanical-right.svg") right bottom / 520px auto no-repeat,
+    url("/botanical-bottom.svg") center bottom / 1400px auto no-repeat;
+
+  opacity: 0.65;              /* increase if you want stronger */
+  filter: blur(0.2px);        /* tiny softness = luxury print */
   mix-blend-mode: multiply;
+}
+
+/* make sure your content sits above the background */
+main, header, footer {
+  position: relative;
+  z-index: 1;
 }
 body::after{
   content:"";
