@@ -10,32 +10,27 @@
 
 html { scroll-behavior: smooth; }
 
-body{
+body {
   color: rgb(var(--ink));
-  background:
-    radial-gradient(900px 500px at 15% 10%, rgba(188,150,72,0.10), transparent 60%),
-    radial-gradient(900px 500px at 85% 15%, rgba(0,0,0,0.06), transparent 55%),
-    linear-gradient(180deg, rgb(var(--paper)) 0%, rgb(var(--paper-2)) 100%);
+  background: linear-gradient(
+    180deg,
+    rgb(var(--paper)) 0%,
+    rgb(var(--paper-2)) 100%
+  );
 }
 
-body::before{
-  content:"";
+/* Botanical overlay */
+body::before {
+  content: "";
   position: fixed;
   inset: 0;
   pointer-events: none;
   z-index: 0;
-
-  background:
-    url("/botanical-left.svg") left bottom / 520px auto no-repeat,
-    url("/botanical-right.svg") right bottom / 520px auto no-repeat,
-    url("/botanical-bottom.svg") center bottom / 1400px auto no-repeat;
-
-  opacity: 0.65;              /* increase if you want stronger */
-  filter: blur(0.2px);        /* tiny softness = luxury print */
-  mix-blend-mode: multiply;
+  background: url("/botanical-frame.png") center bottom / cover no-repeat;
+  opacity: 0.95;
 }
 
-/* make sure your content sits above the background */
+/* Keep content above */
 main, header, footer {
   position: relative;
   z-index: 1;
