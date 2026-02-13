@@ -58,3 +58,14 @@ h1, h2, h3, h4 {
   text-transform: uppercase;
   font-size: 0.75rem;
 }
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

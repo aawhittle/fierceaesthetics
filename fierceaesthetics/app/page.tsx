@@ -1,5 +1,4 @@
 "use client";
-
 import { useEffect, useState } from "react";
 
 function InstagramIcon(props: React.SVGProps<SVGSVGElement>) {
@@ -68,6 +67,21 @@ export default function Page() {
   const [hideSocial, setHideSocial] = useState(false);
 
   useEffect(() => {
+  const elements = document.querySelectorAll(".fade-in");
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    },
+    { threshold: 0.15 }
+  );
+
+  elements.forEach((el) => observer.observe(el));
+}, []);
+  useEffect(() => {
     const el = document.getElementById("footer-sentinel");
     if (!el) return;
 
@@ -133,6 +147,56 @@ export default function Page() {
             ))}
           </div>
         </section>
+
+  <section id="gallery" className="mt-40 space-y-12">
+    <div className="space-y-6 text-center">
+    <p className="section-label text-neutral-500">
+      Gallery
+    </p>
+    <h2 className="text-4xl md:text-5xl font-medium leading-tight">
+      Recent Work
+    </h2>
+  </div>
+
+  <div className="grid gap-8 md:grid-cols-2">
+    
+    {/* Large Feature Image */}
+    <div className="md:col-span-2 overflow-hidden rounded-3xl group shadow-[0_30px_80px_rgba(0,0,0,0.08)]">
+      <img
+        src="/images/work1.jpg"
+        alt="Beauty treatment"
+        className="w-full h-[500px] object-cover transition-transform duration-700 group-hover:scale-105"
+      />
+    </div>
+
+    {/* Two Medium */}
+    <div className="overflow-hidden rounded-3xl group shadow-[0_25px_60px_rgba(0,0,0,0.07)]">
+      <img
+        src="/images/work2.jpg"
+        alt=""
+        className="w-full h-[400px] object-cover transition-transform duration-700 group-hover:scale-105"
+      />
+    </div>
+
+    <div className="overflow-hidden rounded-3xl group shadow-[0_25px_60px_rgba(0,0,0,0.07)]">
+      <img
+        src="/images/work3.jpg"
+        alt=""
+        className="w-full h-[400px] object-cover transition-transform duration-700 group-hover:scale-105"
+      />
+    </div>
+
+    {/* Another Large */}
+    <div className="md:col-span-2 overflow-hidden rounded-3xl group shadow-[0_30px_80px_rgba(0,0,0,0.08)]">
+      <img
+        src="/images/work4.jpg"
+        alt=""
+        className="w-full h-[500px] object-cover transition-transform duration-700 group-hover:scale-105"
+      />
+    </div>
+
+  </div>
+</section>
 
         {/* sentinel goes near the bottom of your content */}
         <footer className="mt-24">
