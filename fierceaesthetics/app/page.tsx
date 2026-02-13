@@ -5,7 +5,7 @@ export default function Page() {
 
        <section className="space-y-6">
         <p className="section-label text-neutral-500">
-           Glam Premium
+           Beauty Redefined
        </p>
 
    <h1 className="text-5xl md:text-6xl font-medium leading-tight">

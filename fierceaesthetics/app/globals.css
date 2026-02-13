@@ -25,10 +25,21 @@ body::before{
   pointer-events: none;
   background-image: url("/botanical-wallpaper.svg");
   background-size: 900px 900px;
-  opacity: 0.6;            /* TEMP: make it obvious */
+  opacity: 0.32;            /* TEMP: make it obvious */
+  filter: blur(0.2px);  
   mix-blend-mode: multiply;
 }
-
+body::after{
+  content:"";
+  position: fixed;
+  inset:0;
+  pointer-events:none;
+  background-image:
+    radial-gradient(circle at 20% 30%, rgba(0,0,0,0.02), transparent 35%),
+    radial-gradient(circle at 70% 60%, rgba(0,0,0,0.02), transparent 40%);
+  opacity: 0.5;
+  mix-blend-mode: multiply;
+}
 /* Headings use Playfair */
 h1, h2, h3, h4 {
   font-family: var(--font-playfair);
