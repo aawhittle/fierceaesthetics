@@ -65,7 +65,7 @@ export default function Page() {
       </div>
   <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
   <a
-    href="https://instagram.com/YOURHANDLE"
+    href="https://instagram.com/fierceaestheticsuk?igsh=a284azI3azJkd2N2"
     target="_blank"
     rel="noreferrer"
     className="rounded-full bg-white/70 backdrop-blur-md border border-black/10 px-4 py-2 text-sm font-medium shadow-[0_15px_40px_rgba(0,0,0,0.10)] hover:bg-white/85 transition"
@@ -74,7 +74,7 @@ export default function Page() {
   </a>
 
   <a
-    href="https://wa.me/447000000000?text=Hi%20I%E2%80%99d%20like%20to%20book%20an%20appointment"
+    href="https://wa.me/447900783177?text=Hi%20I%E2%80%99d%20like%20to%20book%20an%20appointment"
     target="_blank"
     rel="noreferrer"
     className="rounded-full bg-white/70 backdrop-blur-md border border-black/10 px-4 py-2 text-sm font-medium shadow-[0_15px_40px_rgba(0,0,0,0.10)] hover:bg-white/85 transition"
