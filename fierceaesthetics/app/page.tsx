@@ -233,7 +233,7 @@ export default function Page() {
     shadow-[0_18px_50px_rgba(0,0,0,0.12)] 
     hover:bg-white/85 transition"
         >
-          <InstagramIcon className="h-5 w-5" />
+          <InstagramIcon className="h-5 w-5 text-[rgb(var(--gold))]" />
         </a>
 
         <a
@@ -246,7 +246,7 @@ export default function Page() {
     shadow-[0_18px_50px_rgba(0,0,0,0.12)] 
     hover:bg-white/85 transition""
         >
-          <WhatsAppIcon className="h-5 w-5" />
+          <WhatsAppIcon className="h-5 w-5 text-[rgb(var(--gold))]" />
         </a>
 
         <a
@@ -256,7 +256,7 @@ export default function Page() {
           aria-label="TikTok"
           className="h-12 w-12 grid place-items-center rounded-full bg-white/70 backdrop-blur-md border border-black/10 shadow-[0_18px_50px_rgba(0,0,0,0.12)] hover:bg-white/85 transition"
         >
-          <TikTokIcon className="h-5 w-5" />
+          <TikTokIcon className="h-5 w-5 text-[rgb(var(--gold))]" />
         </a>
         <a
   href="https://www.facebook.com/fierceaestheticschorley/"
@@ -265,7 +265,7 @@ export default function Page() {
   aria-label="Facebook"
   className="h-12 w-12 grid place-items-center rounded-full bg-white/70 backdrop-blur-md border border-black/10 shadow-[0_18px_50px_rgba(0,0,0,0.12)] hover:bg-white/85 transition"
 >
-  <FacebookIcon className="h-5 w-5" />
+  <FacebookIcon className="h-5 w-5 text-[rgb(var(--gold))]" />
 </a>
       </div>
     </main>
