@@ -253,7 +253,7 @@ export default function Page() {
           <TikTokIcon className="h-5 w-5" />
         </a>
         <a
-  href="https://www.facebook.com/YOURPAGE"
+  href="https://www.facebook.com/fierceaestheticschorley/"
   target="_blank"
   rel="noreferrer"
   aria-label="Facebook"
