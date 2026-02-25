@@ -62,6 +62,19 @@ function TikTokIcon(props: React.SVGProps<SVGSVGElement>) {
     </svg>
   );
 }
+function FacebookIcon(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" {...props}>
+      <path
+        d="M13 9h2.5V6H13c-1.66 0-3 1.34-3 3v3H8v3h2v6h3v-6h2.11l.39-3H13V9c0-.55.45-1 1-1Z"
+        stroke="currentColor"
+        strokeWidth="1.7"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
 
 export default function Page() {
   const [hideSocial, setHideSocial] = useState(false);
@@ -239,6 +252,15 @@ export default function Page() {
         >
           <TikTokIcon className="h-5 w-5" />
         </a>
+        <a
+  href="https://www.facebook.com/YOURPAGE"
+  target="_blank"
+  rel="noreferrer"
+  aria-label="Facebook"
+  className="h-12 w-12 grid place-items-center rounded-full bg-white/70 backdrop-blur-md border border-black/10 shadow-[0_18px_50px_rgba(0,0,0,0.12)] hover:bg-white/85 transition"
+>
+  <FacebookIcon className="h-5 w-5" />
+</a>
       </div>
     </main>
   );
