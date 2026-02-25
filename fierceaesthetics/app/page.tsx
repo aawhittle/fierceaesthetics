@@ -228,7 +228,10 @@ export default function Page() {
           target="_blank"
           rel="noreferrer"
           aria-label="Instagram"
-          className="h-12 w-12 grid place-items-center rounded-full bg-white/70 backdrop-blur-md border border-black/10 shadow-[0_18px_50px_rgba(0,0,0,0.12)] hover:bg-white/85 transition"
+          className="h-12 w-12 grid place-items-center rounded-full bg-white/70 backdrop-blur-md     border border-[rgba(var(--gold),0.25)] 
+    text-[rgb(var(--gold))]
+    shadow-[0_18px_50px_rgba(0,0,0,0.12)] 
+    hover:bg-white/85 transition"
         >
           <InstagramIcon className="h-5 w-5" />
         </a>
@@ -238,7 +241,10 @@ export default function Page() {
           target="_blank"
           rel="noreferrer"
           aria-label="WhatsApp"
-          className="h-12 w-12 grid place-items-center rounded-full bg-white/70 backdrop-blur-md border border-black/10 shadow-[0_18px_50px_rgba(0,0,0,0.12)] hover:bg-white/85 transition"
+          className="h-12 w-12 grid place-items-center rounded-full bg-white/70 backdrop-blur-md border border-[rgba(var(--gold),0.25)] 
+    text-[rgb(var(--gold))]
+    shadow-[0_18px_50px_rgba(0,0,0,0.12)] 
+    hover:bg-white/85 transition""
         >
           <WhatsAppIcon className="h-5 w-5" />
         </a>
