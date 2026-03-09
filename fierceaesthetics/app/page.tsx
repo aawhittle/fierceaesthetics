@@ -125,7 +125,7 @@ export default function Page() {
           <h2 className="text-4xl font-medium leading-tight mt-12 md:mt-16">Treatments & Pricing</h2>
           <div className="mt-4 h-1 w-32 rounded inline-block" style={{ backgroundColor: "rgb(var(--gold) / 0.50)", width: "100%" }} />
 
-          <div className="mt-10 space-y-16">
+          <div className="mt-8 space-y-16">
             {services.map((group) => (
               <div key={group.sectionTitle}>
                 <h3 className="text-2xl md:text-3xl font-medium tracking-tight">
@@ -137,7 +137,7 @@ export default function Page() {
                   ))}
                 </div>
 
-                <div className="mt-10 space-y-6">
+                <div className="mt-8 space-y-6">
                   {group.items.map((s) => (
                     <div
                       key={s.name}
