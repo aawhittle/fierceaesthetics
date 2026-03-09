@@ -132,34 +132,115 @@ export default function Page() {
 
           <div className="mt-10 space-y-6">
             {[
-              { name: "Brow Shape & Tint", time: "45 mins", price: "£35" },
-              { name: "Lash Lift", time: "60 mins", price: "£55" },
-              { name: "Signature Facial", time: "60 mins", price: "£70" },
-            ].map((s) => (
+              {
+          sectionTitle: "Lash & Brow Treatments",
+          intro: [
+            "Beautifully defined lashes and brows can completely transform your look. Our professional lash and brow treatments are designed to enhance your natural features, creating fuller, lifted, and perfectly groomed results with minimal daily maintenance.",
+            "Each treatment is performed with precision and high-quality professional products to ensure long-lasting results while maintaining the health of your natural lashes and brows.",
+          ],
+          items: [
+            {
+              name: "Traditional Lash Lift & Tint",
+              time: "45 mins",
+              price: "£45",
+              description:
+                "A classic treatment designed to enhance the natural beauty of your lashes. The lashes are gently lifted from the root to create the appearance of longer, fuller lashes, while a bespoke tint deepens the colour for a soft mascara-like finish.\n\nThe result is beautifully lifted, darker lashes that open the eyes and last up to 6–8 weeks.",
+            },
+            {
+              name: "Korean Lash Lift & Tint",
+              time: "45–60 mins",
+              price: "£50",
+              description:
+                "An advanced lash lift technique known for producing a softer, more natural-looking curl while maintaining optimal lash health. Using nourishing and conditioning formulas, this treatment lifts the lashes while keeping them glossy, flexible, and beautifully defined.\n\nIdeal for clients looking for a luxurious, long-lasting lash enhancement with a refined finish.",
+            },
+            {
+              name: "Brow Lamination, Wax & Tint",
+              time: "45 mins",
+              price: "£45",
+              description:
+                "The ultimate treatment for fuller, more structured brows. Brow lamination works by gently restructuring the brow hairs so they can be lifted and styled into a sleek, uniform shape, creating a fuller and more polished appearance.\n\nThe treatment is completed with a professional brow wax and custom tint to enhance colour, shape, and definition.",
+            },
+            {
+              name: "Brow Shape, Wax & Tint",
+              time: "30 mins",
+              price: "£25",
+              description:
+                "A tailored brow grooming treatment designed to shape and define your brows while complementing your natural features. Brows are expertly sculpted using precision waxing and enhanced with a bespoke tint to add depth and definition.\n\nPerfect for maintaining beautifully groomed, balanced brows.",
+            },
+          ],
+          noteTitle: "Pair With a Facial",
+          noteBody:
+            "Many clients choose to combine their lash or brow treatment with one of our advanced facial treatments for the ultimate self-care experience.",
+        },
+      ].map((group) => (
+        <div key={group.sectionTitle} className="mt-16">
+          {/* Group header + intro (keeps your typography vibe) */}
+          <h3 className="text-2xl md:text-3xl font-medium tracking-tight">
+            {group.sectionTitle}
+          </h3>
+
+          <div className="mt-4 space-y-3 text-neutral-600 max-w-3xl text-lg leading-relaxed">
+            {group.intro.map((p) => (
+              <p key={p}>{p}</p>
+            ))}
+          </div>
+
+          {/* Cards (same border/shadow/hover as your existing service rows) */}
+          <div className="mt-10 space-y-6">
+            {group.items.map((s) => (
               <div
                 key={s.name}
-                className="flex justify-between items-center p-7 rounded-3xl
-                bg-white md:bg-white/80
-                md:backdrop-blur-md
-                border border-black/5
-                shadow-[0_20px_60px_rgba(0,0,0,0.05)]
-                transition-all duration-300 hover:shadow-[0_25px_80px_rgba(0,0,0,0.08)] hover:-translate-y-1"
+                className="p-7 rounded-3xl
+                  bg-white md:bg-white/80
+                  md:backdrop-blur-md
+                  border border-black/5
+                  shadow-[0_20px_60px_rgba(0,0,0,0.05)]
+                  transition-all duration-300
+                  hover:shadow-[0_25px_80px_rgba(0,0,0,0.08)]
+                  hover:-translate-y-1"
               >
-                <div>
-                  <p className="text-lg font-medium tracking-tight">{s.name}</p>
-                  <p className="text-sm text-neutral-500 mt-1">{s.time}</p>
+                <div className="flex justify-between items-start gap-6">
+                  <div className="min-w-0">
+                    <p className="text-lg font-medium tracking-tight">
+                      {s.name}
+                    </p>
+                    <p className="text-sm text-neutral-500 mt-1">{s.time}</p>
+                  </div>
+
+                  <p
+                    className="text-lg font-medium shrink-0"
+                    style={{ color: "rgb(var(--gold))" }}
+                  >
+                    {s.price}
+                  </p>
                 </div>
 
-                <p
-                  className="text-lg font-medium"
-                  style={{ color: "rgb(var(--gold))" }}
-                >
-                  {s.price}
+                {/* Description */}
+                <p className="mt-4 text-neutral-600 leading-relaxed whitespace-pre-line">
+                  {s.description}
                 </p>
               </div>
             ))}
           </div>
-        </section>
+
+          {/* Note callout (same design language) */}
+          <div
+            className="mt-8 p-7 rounded-3xl
+              bg-white md:bg-white/70
+              md:backdrop-blur-md
+              border border-black/5
+              shadow-[0_20px_60px_rgba(0,0,0,0.04)]"
+          >
+            <p className="text-lg font-medium tracking-tight">
+              {group.noteTitle}
+            </p>
+            <p className="mt-2 text-neutral-600 leading-relaxed">
+              {group.noteBody}
+            </p>
+          </div>
+        </div>
+      ))}
+    </section>
 
   <section id="gallery" className="mt-40 space-y-12">
     <div className="space-y-6 text-center">
