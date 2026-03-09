@@ -135,10 +135,10 @@ export default function Page() {
                   ))}
                 </div>
 
-                {group.noteTitle && (
+                {("noteTitle" in group && "noteBody" in group) && (group as any).noteTitle && (
                   <div className="mt-8 p-7 rounded-3xl bg-white md:bg-white/70 backdrop-blur-md border border-black/5 shadow-[0_20px_60px_rgba(0,0,0,0.04)]">
-                    <p className="text-lg font-medium">{group.noteTitle}</p>
-                    <p className="mt-2 text-neutral-600">{group.noteBody}</p>
+                    <p className="text-lg font-medium">{(group as any).noteTitle as React.ReactNode}</p>
+                    <p className="mt-2 text-neutral-600">{(group as any).noteBody as React.ReactNode}</p>
                   </div>
                 )}
               </div>
