@@ -111,59 +111,138 @@ export default function Page() {
   return (
     <main className="min-h-screen text-neutral-950">
       <div className="max-w-5xl mx-auto px-6 py-20">
-     <div className="mt-10 space-y-16">
-  {services.map((group) => (
-    <div key={group.sectionTitle}>
-      
-      <h3 className="text-2xl md:text-3xl font-medium tracking-tight">
-        {group.sectionTitle}
-      </h3>
+        <section className="space-y-6">
+          <p className="section-label text-neutral-500">Beauty Redefined</p>
 
-      <div
-        className="mt-4 h-px w-24"
-        style={{ backgroundColor: "rgb(var(--gold) / 0.35)" }}
-      />
+          <h1 className="text-5xl md:text-6xl font-medium leading-tight">
+            Bold beauty.{" "}
+            <span style={{ color: "rgb(var(--gold))" }}>Luxury finish.</span>
+          </h1>
 
-      <div className="mt-4 space-y-3 text-neutral-600 max-w-3xl">
-        {group.intro?.map((p) => (
-          <p key={p}>{p}</p>
-        ))}
-      </div>
+          <p className="text-neutral-600 max-w-xl text-lg">
+            A calm, elevated experience with refined detail and camera-ready
+            results.
+          </p>
+        </section>
 
-      <div className="mt-10 space-y-6">
-        {group.items.map((s) => (
-          <div
-            key={s.name}
-            className="p-7 rounded-3xl bg-white md:bg-white/80 backdrop-blur-md border border-black/5 shadow-[0_20px_60px_rgba(0,0,0,0.05)]"
-          >
-            <div className="flex justify-between items-start">
-              <div>
-                <p className="text-lg font-medium">{s.name}</p>
-                {s.time && (
-                  <p className="text-sm text-neutral-500 mt-1">{s.time}</p>
-                )}
+        <section className="mt-32 space-y-10">
+          <p className="section-label text-neutral-500">Services</p>
+          <h2 className="text-4xl font-medium leading-tight">
+            Treatments & Pricing
+          </h2>
+
+        <div key={group.sectionTitle} className="mt-16">
+          {/* Group header + intro (keeps your typography vibe) */}
+          <h3 className="text-2xl md:text-3xl font-medium tracking-tight">
+            {group.sectionTitle}
+          </h3>
+
+          <div className="mt-4 space-y-3 text-neutral-600 max-w-3xl text-lg leading-relaxed">
+            {group.intro.map((p) => (
+              <p key={p}>{p}</p>
+            ))}
+          </div>
+<div className="max-w-5xl mx-auto px-6 py-20">
+
+      {/* HERO */}
+      <section className="space-y-6">
+        <p className="section-label text-neutral-500">Beauty Redefined</p>
+
+        <h1 className="text-5xl md:text-6xl font-medium leading-tight">
+          Bold beauty.{" "}
+          <span style={{ color: "rgb(var(--gold))" }}>Luxury finish.</span>
+        </h1>
+
+        <p className="text-neutral-600 max-w-xl text-lg">
+          A calm, elevated experience with refined detail and camera-ready
+          results.
+        </p>
+      </section>
+
+<section className="mt-32 space-y-10">
+  <p className="section-label text-neutral-500">Services</p>
+
+  <h2 className="text-4xl font-medium leading-tight">
+    Treatments & Pricing
+  </h2>
+
+  <div
+    className="mt-4 h-px w-24"
+    style={{ backgroundColor: "rgb(var(--gold) / 0.35)" }}
+  />
+
+  <div className="mt-10 space-y-16">
+    {services.map((group) => (
+      <div key={group.sectionTitle}>
+
+        <h3 className="text-2xl md:text-3xl font-medium tracking-tight">
+          {group.sectionTitle}
+        </h3>
+
+        <div className="mt-4 space-y-3 text-neutral-600 max-w-3xl">
+          {group.intro?.map((p) => (
+            <p key={p}>{p}</p>
+          ))}
+        </div>
+
+        <div className="mt-10 space-y-6">
+          {group.items.map((s) => (
+            <div
+              key={s.name}
+              className="p-7 rounded-3xl bg-white md:bg-white/80 backdrop-blur-md border border-black/5 shadow-[0_20px_60px_rgba(0,0,0,0.05)]"
+            >
+              <div className="flex justify-between items-start gap-6">
+                <div>
+                  <p className="text-lg font-medium">{s.name}</p>
+
+                  {s.time && (
+                    <p className="text-sm text-neutral-500 mt-1">
+                      {s.time}
+                    </p>
+                  )}
+                </div>
+
+                <p
+                  className="text-lg font-medium"
+                  style={{ color: "rgb(var(--gold))" }}
+                >
+                  {s.price}
+                </p>
               </div>
 
-              <p
-                className="text-lg font-medium"
-                style={{ color: "rgb(var(--gold))" }}
-              >
-                {s.price}
-              </p>
+              {s.description && (
+                <p className="mt-4 text-neutral-600 whitespace-pre-line">
+                  {s.description}
+                </p>
+              )}
             </div>
+          ))}
+        </div>
 
-            {s.description && (
-              <p className="mt-4 text-neutral-600 whitespace-pre-line">
-                {s.description}
-              </p>
-            )}
-          </div>
-        ))}
       </div>
-    </div>
-  ))}
+    ))}
   </div>
-  
+</section>
+
+          {/* Note callout (same design language) */}
+          <div
+            className="mt-8 p-7 rounded-3xl
+              bg-white md:bg-white/70
+              md:backdrop-blur-md
+              border border-black/5
+              shadow-[0_20px_60px_rgba(0,0,0,0.04)]"
+          >
+            <p className="text-lg font-medium tracking-tight">
+              {group.noteTitle}
+            </p>
+            <p className="mt-2 text-neutral-600 leading-relaxed">
+              {group.noteBody}
+            </p>
+          </div>
+        </div>
+      ))}
+          </div>
+    </section>
   <section id="gallery" className="mt-40 space-y-12">
     <div className="space-y-6 text-center">
     <p className="section-label text-neutral-500">
