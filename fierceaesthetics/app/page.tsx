@@ -217,7 +217,7 @@ export default function Page() {
           time: "—",
           description:
             "A non-invasive treatment designed to lift, firm and sculpt the buttocks using radio frequency and cavitation technology.\n\nThis treatment helps improve skin laxity while enhancing shape and contour. Lymphatic drainage massage helps boost circulation and support the body’s natural detoxification process."
-        }
+        },
         {
           name: "RF Skin Tightening Facial",
           price: "£89",
