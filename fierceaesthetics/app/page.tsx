@@ -130,6 +130,11 @@ export default function Page() {
             Treatments & Pricing
           </h2>
 
+          <div
+             className="mt-4 h-px w-24"
+            style={{ background: "rgba(var(--gold),0.35)" }}
+          />
+
           <div className="mt-10 space-y-6">
             {[
               {
@@ -240,7 +245,6 @@ export default function Page() {
           </div>
         </div>
       ))} 
-          </div>
     </section>
   <section id="gallery" className="mt-40 space-y-12">
     <div className="space-y-6 text-center">
