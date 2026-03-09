@@ -174,6 +174,5 @@ return (
     <a href="https://facebook.com" target="_blank" rel="noreferrer">
       <FacebookIcon className="h-5 w-5 text-[rgb(var(--gold))]" />
     </a>
-  </div>
-
+    </div>
 </main>
