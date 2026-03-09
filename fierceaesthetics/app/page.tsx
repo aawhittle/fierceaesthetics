@@ -169,10 +169,10 @@ export default function Page() {
         </section>
 
         {/* GALLERY */}
-        <section id="gallery" className="mt-15 space-y-12">
+        <section id="promotions" className="mt-15 space-y-12">
           <div className="space-y-6 text-center">
-            <p className="section-label text-neutral-500">Gallery</p>
-            <h2 className="text-4xl md:text-5xl font-medium leading-tight">Recent Work</h2>
+            <p className="section-label text-neutral-500">Promotions</p>
+            <h2 className="text-4xl md:text-5xl font-medium leading-tight">Current Offers</h2>
           </div>
 
           <div className="grid gap-8 md:grid-cols-2">
