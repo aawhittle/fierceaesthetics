@@ -129,15 +129,7 @@ export default function Page() {
           <h2 className="text-4xl font-medium leading-tight">
             Treatments & Pricing
           </h2>
-
-          <div
-             className="mt-4 h-px"
-            style={{
-                 width: "var(--section-divider-width, 6rem)",
-                backgroundColor: "rgb(var(--gold) / 0.35)",
-            }}
-          />
-
+          
           <div className="mt-10 space-y-6">
             {[
               {
