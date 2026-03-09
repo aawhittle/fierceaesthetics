@@ -131,8 +131,11 @@ export default function Page() {
           </h2>
 
           <div
-             className="mt-4 h-px w-24"
-            style={{ background: "rgba(var(--gold),0.35)" }}
+             className="mt-4 h-px"
+            style={{
+              width: "var(--section-divider-width, 6rem)",
+              background: "rgba(var(--gold),0.35)"
+            }}
           />
 
           <div className="mt-10 space-y-6">
