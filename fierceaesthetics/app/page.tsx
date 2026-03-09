@@ -123,7 +123,7 @@ export default function Page() {
         {/* SERVICES */}
         <section className="mt-10 space-y-10">
           <h2 className="text-4xl font-medium leading-tight mt-12 md:mt-16">Treatments & Pricing</h2>
-          <div className="mt-4 h-px w-24" style={{ backgroundColor: "rgb(var(--gold) / 0.35)" }} />
+          <div className="mt-4 h-1 w-32 rounded" style={{ backgroundColor: "rgb(var(--gold) / 0.50)" }} />
 
           <div className="mt-10 space-y-16">
             {services.map((group) => (
