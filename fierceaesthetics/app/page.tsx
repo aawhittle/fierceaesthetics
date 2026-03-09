@@ -129,7 +129,7 @@ export default function Page() {
           <h2 className="text-4xl font-medium leading-tight">
             Treatments & Pricing
           </h2>
-          
+
           <div className="mt-10 space-y-6">
             {[
               {
@@ -239,7 +239,8 @@ export default function Page() {
             </p>
           </div>
         </div>
-      ))} 
+      ))}
+          </div>
     </section>
   <section id="gallery" className="mt-40 space-y-12">
     <div className="space-y-6 text-center">
