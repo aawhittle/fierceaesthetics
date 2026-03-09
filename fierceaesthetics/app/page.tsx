@@ -121,9 +121,8 @@ export default function Page() {
         </section>
 
         {/* SERVICES */}
-        <section className="mt-10 space-y-10">
+        <section className="mt-5 space-y-10">
           <h2 className="text-4xl font-medium leading-tight mt-12 md:mt-16">Treatments & Pricing</h2>
-          <div className="mt-4 h-1 w-32 rounded inline-block" style={{ backgroundColor: "rgb(var(--gold) / 0.50)", width: "100%" }} />
 
           <div className="mt-8 space-y-16">
             {services.map((group) => (
