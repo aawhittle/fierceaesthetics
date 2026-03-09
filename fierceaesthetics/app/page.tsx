@@ -125,17 +125,11 @@ export default function Page() {
           </p>
         </section>
 
-        <section className="mt-32 space-y-10">
           <p className="section-label text-neutral-500">Services</p>
           <h2 className="text-4xl font-medium leading-tight">
             Treatments & Pricing
           </h2>
-
-        <div key={group.sectionTitle} className="mt-16">
-          {/* Group header + intro (keeps your typography vibe) */}
-          <h3 className="text-2xl md:text-3xl font-medium tracking-tight">
-            {group.sectionTitle}
-          </h3>
+          </section>
 
           <div className="mt-4 space-y-3 text-neutral-600 max-w-3xl text-lg leading-relaxed">
             {group.intro.map((p) => (
