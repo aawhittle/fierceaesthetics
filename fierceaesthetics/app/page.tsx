@@ -134,7 +134,7 @@ export default function Page() {
              className="mt-4 h-px"
             style={{
               width: "var(--section-divider-width, 6rem)",
-              background: "rgba(var(--gold),0.35)"
+              background: "rgb(var(--gold),0.35)"
             }}
           />
 
