@@ -153,8 +153,6 @@ return (
       <div id="footer-sentinel" className="h-16" />
     </footer>
 
-  </div>
-
   {/* FLOATING SOCIAL */}
   <div
     className={`fixed bottom-6 right-6 z-50 flex flex-col gap-3 transition-all duration-300 ${
