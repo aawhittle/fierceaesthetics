@@ -123,37 +123,9 @@ export default function Page() {
             A calm, elevated experience with refined detail and camera-ready
             results.
           </p>
-        </section>
 
           <p className="section-label text-neutral-500">Services</p>
-          <h2 className="text-4xl font-medium leading-tight">
-            Treatments & Pricing
-          </h2>
-          </section>
-
-          <div className="mt-4 space-y-3 text-neutral-600 max-w-3xl text-lg leading-relaxed">
-            {group.intro.map((p) => (
-              <p key={p}>{p}</p>
-            ))}
-          </div>
-<div className="max-w-5xl mx-auto px-6 py-20">
-
-      {/* HERO */}
-      <section className="space-y-6">
-        <p className="section-label text-neutral-500">Beauty Redefined</p>
-
-        <h1 className="text-5xl md:text-6xl font-medium leading-tight">
-          Bold beauty.{" "}
-          <span style={{ color: "rgb(var(--gold))" }}>Luxury finish.</span>
-        </h1>
-
-        <p className="text-neutral-600 max-w-xl text-lg">
-          A calm, elevated experience with refined detail and camera-ready
-          results.
-        </p>
-      </section>
-
-<section className="mt-32 space-y-10">
+        <section className="mt-32 space-y-10">
   <p className="section-label text-neutral-500">Services</p>
 
   <h2 className="text-4xl font-medium leading-tight">
@@ -214,9 +186,9 @@ export default function Page() {
         </div>
 
       </div>
+    ))}
   </div>
 </section>
-
           {/* Note callout (same design language) */}
           <div
             className="mt-8 p-7 rounded-3xl
