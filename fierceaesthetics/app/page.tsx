@@ -98,8 +98,7 @@ export default function Page() {
         </section>
 
         {/* SERVICES */}
-        <section className="mt-32 space-y-10">
-          <p className="section-label text-neutral-500">Services</p>
+        <section className="mt-10 space-y-10">
           <h2 className="text-4xl font-medium leading-tight">Treatments & Pricing</h2>
           <div className="mt-4 h-px w-24" style={{ backgroundColor: "rgb(var(--gold) / 0.35)" }} />
 
