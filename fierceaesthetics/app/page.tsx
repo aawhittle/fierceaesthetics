@@ -218,14 +218,14 @@ export default function Page() {
           description:
             "A non-invasive treatment designed to lift, firm and sculpt the buttocks using radio frequency and cavitation technology.\n\nThis treatment helps improve skin laxity while enhancing shape and contour. Lymphatic drainage massage helps boost circulation and support the body’s natural detoxification process."
         },
-        {
-          name: "RF Skin Tightening Facial",
-          price: "£89",
-          time: "—",
-          description:
-            "A luxurious, results-driven facial designed to lift, firm and rejuvenate the skin while promoting long-term skin health.\n\nThis treatment begins with a full professional facial using the premium Million Dollar skincare range, including deep cleansing, exfoliation and targeted products chosen to suit your skin type. Radio frequency technology is then used to gently heat the deeper layers of the skin, stimulating collagen and elastin production to improve firmness and elasticity.\n\nThis advanced treatment helps soften the appearance of fine lines and wrinkles, refine skin texture and restore a youthful glow. Skin is left feeling smoother, tighter and deeply revitalised, with results continuing to improve with regular treatments."
- }
-      ]
+  {
+    name: "RF Skin Tightening Facial",
+    price: "£89",
+    time: "—",
+    description:
+      "A luxurious, results-driven facial designed to lift, firm and rejuvenate the skin while promoting long-term skin health.\n\nThis treatment begins with a full professional facial using the premium Million Dollar skincare range, including deep cleansing, exfoliation and targeted products chosen to suit your skin type. Radio frequency technology is then used to gently heat the deeper layers of the skin, stimulating collagen and elastin production to improve firmness and elasticity.\n\nThis advanced treatment helps soften the appearance of fine lines and wrinkles, refine skin texture and restore a youthful glow. Skin is left feeling smoother, tighter and deeply revitalised, with results continuing to improve with regular treatments."
+  }
+],
 {
   sectionTitle: "Million Dollar Treatments",
   intro: [
@@ -311,8 +311,7 @@ export default function Page() {
     }
   ]
 }
-    }
-  
+  }
       ].map((group) => (
         <div key={group.sectionTitle} className="mt-16">
           {/* Group header + intro (keeps your typography vibe) */}
