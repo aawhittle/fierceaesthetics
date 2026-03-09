@@ -172,6 +172,7 @@ export default function Page() {
           noteBody:
             "Many clients choose to combine their lash or brow treatment with one of our advanced facial treatments for the ultimate self-care experience.",
         },
+              },
   {
       sectionTitle: "Body Contouring Treatments",
       intro: [
@@ -226,6 +227,7 @@ export default function Page() {
       "A luxurious, results-driven facial designed to lift, firm and rejuvenate the skin while promoting long-term skin health.\n\nThis treatment begins with a full professional facial using the premium Million Dollar skincare range, including deep cleansing, exfoliation and targeted products chosen to suit your skin type. Radio frequency technology is then used to gently heat the deeper layers of the skin, stimulating collagen and elastin production to improve firmness and elasticity.\n\nThis advanced treatment helps soften the appearance of fine lines and wrinkles, refine skin texture and restore a youthful glow. Skin is left feeling smoother, tighter and deeply revitalised, with results continuing to improve with regular treatments."
   }
 ],
+  }
 {
   sectionTitle: "Million Dollar Treatments",
   intro: [
@@ -309,9 +311,8 @@ export default function Page() {
       description:
         "Maintaining healthy skin extends beyond the face. The Million Dollar Bacial is a 45-minute back treatment designed to improve the appearance and health of the skin on the back.\n\nThis treatment deeply cleanses and exfoliates hard-to-reach areas, helping to address common concerns such as clogged pores, back acne, uneven texture, and dehydrated skin.\n\nThe result is clearer, smoother, and healthier-looking skin, leaving the back feeling refreshed and revitalised."
     }
-  ]
+  ],
 }
-  }
       ].map((group) => (
         <div key={group.sectionTitle} className="mt-16">
           {/* Group header + intro (keeps your typography vibe) */}
