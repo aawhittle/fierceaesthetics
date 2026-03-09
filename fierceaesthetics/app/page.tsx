@@ -214,7 +214,6 @@ export default function Page() {
         </div>
 
       </div>
-    ))}
   </div>
 </section>
 
