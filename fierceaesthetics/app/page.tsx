@@ -137,7 +137,7 @@ export default function Page() {
                   ))}
                 </div>
               
-           <div className="mt-4 h-1 w-32 rounded inline-block" style={{ backgroundColor: "rgb(var(--gold) / 0.50)", width: "100%" }} />
+              <div className="mt-4 h-1 w-32 rounded inline-block" style={{ backgroundColor: "rgb(var(--gold) / 0.50)", width: "100%" }} />
 
                 <div className="mt-8 space-y-6">
                   {group.items.map((s) => (
@@ -158,8 +158,6 @@ export default function Page() {
                     </div>
                   ))}
                 </div>
-
-          <div className="mt-4 h-1 w-32 rounded inline-block" style={{ backgroundColor: "rgb(var(--gold) / 0.50)", width: "100%" }} />
 
                 {("noteTitle" in group && "noteBody" in group) && (group as any).noteTitle && (
                   <div className="mt-8 p-7 rounded-3xl bg-white md:bg-white/70 backdrop-blur-md border border-black/5 shadow-[0_20px_60px_rgba(0,0,0,0.04)]">
