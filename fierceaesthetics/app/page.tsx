@@ -133,8 +133,8 @@ export default function Page() {
           <div
              className="mt-4 h-px"
             style={{
-              width: "var(--section-divider-width, 6rem)",
-              background: "rgb(var(--gold),0.35)"
+                 width: "var(--section-divider-width, 6rem)",
+                backgroundColor: "rgb(var(--gold) / 0.35)",
             }}
           />
 
