@@ -310,6 +310,7 @@ export default function Page() {
         "Maintaining healthy skin extends beyond the face. The Million Dollar Bacial is a 45-minute back treatment designed to improve the appearance and health of the skin on the back.\n\nThis treatment deeply cleanses and exfoliates hard-to-reach areas, helping to address common concerns such as clogged pores, back acne, uneven texture, and dehydrated skin.\n\nThe result is clearer, smoother, and healthier-looking skin, leaving the back feeling refreshed and revitalised."
     }
   ]
+}
     }
   
       ].map((group) => (
