@@ -239,9 +239,9 @@ export default function Page() {
             </p>
           </div>
         </div>
-      ))}
+      ))} 
+          </div>
     </section>
-
   <section id="gallery" className="mt-40 space-y-12">
     <div className="space-y-6 text-center">
     <p className="section-label text-neutral-500">
