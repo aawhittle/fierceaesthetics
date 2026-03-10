@@ -116,36 +116,37 @@ export default function RootLayout({
       className={`${playfair.variable} ${inter.variable}`}
     >
        <body className="font-[var(--font-inter)] antialiased bg-white text-neutral-900">
-          {/* Sidebar overlay */}
-          <Sidebar isOpen={sidebarOpen} onClose={() => setSidebarOpen(false)} />
+          {/* Mobile Sidebar overlay */}
+        <Sidebar isOpen={sidebarOpen} onClose={() => setSidebarOpen(false)} />
 
-          {/* Mobile toggle button */}
+        {/* Mobile toggle button */}
         <button
-          className="fixed top-6 left-6 z-50 md:hidden bg-[rgb(var(--gold))] text-white p-3 rounded-full shadow-lg"
+          className="fixed top-6 left-6 z-50 md:hidden bg-[rgb(var(--gold))] text-white p-3 rounded-full shadow-lg transition-transform active:scale-95"
           onClick={() => setSidebarOpen(true)}
+          aria-label="Open menu"
         >
           ☰
         </button>
 
-     {/* Page content */}
+        {/* Page content */}
         <div className="flex">
-
           {/* Desktop sidebar */}
           <div className="hidden md:block md:w-64 md:flex-shrink-0">
             <Sidebar isOpen={true} onClose={() => {}} />
           </div>
 
           {/* Main content */}
-          <main className="flex-1 px-6 py-12 max-w-6xl mx-auto">
+          <main
+            className={`flex-1 px-6 py-12 max-w-6xl mx-auto transition-transform duration-500 ease-in-out
+              ${sidebarOpen ? "md:translate-x-0" : ""}`}
+          >
             {children}
             <div id="footer-sentinel" className="h-32" />
           </main>
-
         </div>
 
         {/* Floating social icons */}
         <FloatingSocials />
-
       </body>
     </html>
   );
