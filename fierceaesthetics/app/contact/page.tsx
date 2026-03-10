@@ -22,65 +22,68 @@ export default function Contact() {
 
       <div className="space-y-6">
 
-        <a
-          href="https://wa.me/447900783177"
-           className="
-        p-8 
-        rounded-3xl 
-        bg-white/95 
-        md:bg-white/90 
-        backdrop-blur-lg 
-        border border-black/10 
-        shadow-[0_20px_60px_rgba(0,0,0,0.08)] 
-        hover:shadow-lg 
-        transition
-      "
-        >
-          <p className="font-medium">WhatsApp Booking</p>
-          <p className="text-neutral-600">
-            Message directly to book an appointment.
-          </p>
-        </a>
+      <a
+  href="https://wa.me/447900783177"
+  className="
+    p-7
+    rounded-3xl
+    bg-white
+    md:bg-white/80
+    backdrop-blur-md
+    border border-black/5
+    shadow-[0_20px_60px_rgba(0,0,0,0.05)]
+    hover:shadow-lg
+    transition
+    block
+  "
+>
+  <p className="font-medium">WhatsApp Booking</p>
+  <p className="text-neutral-600 mt-1">
+    Message directly to book an appointment.
+  </p>
+</a>
 
-        <a
-          href="https://instagram.com/fierceaestheticsuk"
-           className="
-        p-8 
-        rounded-3xl 
-        bg-white/95 
-        md:bg-white/90 
-        backdrop-blur-lg 
-        border border-black/10 
-        shadow-[0_20px_60px_rgba(0,0,0,0.08)] 
-        hover:shadow-lg 
-        transition
-      "
-        >
-          <p className="font-medium">Instagram</p>
-          <p className="text-neutral-600">
-            View latest work and send a DM.
-          </p>
-        </a>
+<a
+  href="https://instagram.com/fierceaestheticsuk"
+  className="
+    p-7
+    rounded-3xl
+    bg-white
+    md:bg-white/80
+    backdrop-blur-md
+    border border-black/5
+    shadow-[0_20px_60px_rgba(0,0,0,0.05)]
+    hover:shadow-lg
+    transition
+    block
+  "
+>
+  <p className="font-medium">Instagram</p>
+  <p className="text-neutral-600 mt-1">
+    View latest work and send a DM.
+  </p>
+</a>
 
-        <a
-          href="https://www.facebook.com/fierceaestheticschorley"
-           className="
-        p-8 
-        rounded-3xl 
-        bg-white/95 
-        md:bg-white/90 
-        backdrop-blur-lg 
-        border border-black/10 
-        shadow-[0_20px_60px_rgba(0,0,0,0.08)] 
-        hover:shadow-lg 
-        transition
-      "
-        >
-          <p className="font-medium">Facebook</p>
-          <p className="text-neutral-600">
-            Follow updates and contact via Messenger.
-          </p>
-        </a>
+<a
+  href="https://www.facebook.com/fierceaestheticschorley"
+  className="
+    p-7
+    rounded-3xl
+    bg-white
+    md:bg-white/80
+    backdrop-blur-md
+    border border-black/5
+    shadow-[0_20px_60px_rgba(0,0,0,0.05)]
+    hover:shadow-lg
+    transition
+    block
+  "
+>
+  <p className="font-medium">Facebook</p>
+  <p className="text-neutral-600 mt-1">
+    Follow updates and contact via Messenger.
+  </p>
+</a>
 
       </div>
 
