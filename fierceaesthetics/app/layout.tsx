@@ -137,12 +137,20 @@ export default function RootLayout({
             <div id="footer-sentinel" className="h-32" />
           </main>
 
-         <footer className="mt-20 pt-8 pb-10 text-center border-t border-[rgb(var(--gold))]/30">
-            <p className="text-sm text-neutral-700">
-            &copy; {new Date().getFullYear()} 
-            <span style={{ color: "rgb(var(--gold))" }}>AW</span>. All rights reserved.
-            </p>
-        </footer>
+        <footer className="mt-20 px-6">
+          <div className="max-w-6xl mx-auto text-center py-8 rounded-3xl
+            bg-white/90 backdrop-blur-md border border-black/5
+            shadow-[0_20px_60px_rgba(0,0,0,0.05)]">
+
+        <p className="text-sm text-neutral-700">
+           &copy; {new Date().getFullYear()} 
+            <span className="font-medium" style={{ color: "rgb(var(--gold))" }}>
+            AW
+            </span>. All rights reserved.
+        </p>
+
+  </div>
+</footer>
 
         {/* Floating social icons */}
         <FloatingSocials />
