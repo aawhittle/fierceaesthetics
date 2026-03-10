@@ -108,15 +108,27 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+
   return (
     <html
       lang="en"
       className={`${playfair.variable} ${inter.variable}`}
     >
        <body className="font-[var(--font-inter)] antialiased bg-white text-neutral-900">
+          {/* Sidebar overlay */}
+          <Sidebar isOpen={sidebarOpen} onClose={() => setSidebarOpen(false)} />
 
           {/* Sidebar */}
           <SidebarLayout />
+
+          {/* Mobile toggle button */}
+        <button
+          className="fixed top-6 left-6 z-50 md:hidden bg-[rgb(var(--gold))] text-white p-3 rounded-full shadow-lg"
+          onClick={() => setSidebarOpen(true)}
+        >
+          ☰
+        </button>
 
           {/* Page Content */}
           <main className="relative px-6 py-12 max-w-6xl mx-auto">
