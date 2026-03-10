@@ -7,6 +7,7 @@ import Sidebar from "@/components/Sidebar";
 import { useState } from "react";
 import Link from "next/link";
 import { services } from "@/data/services";
+import FloatingSocials from "@/components/FloatingSocials";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -120,6 +121,12 @@ export default function RootLayout({
           {/* Page Content */}
           <main className="relative px-6 py-12 max-w-6xl mx-auto">
             {children}
+             {/* Footer sentinel for floating socials */}
+          <div id="footer-sentinel" className="h-32" />
+        </main>
+
+        {/* Floating social icons */}
+        <FloatingSocials />
           </main>
 
       </body>
