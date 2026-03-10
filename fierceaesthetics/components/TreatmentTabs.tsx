@@ -52,8 +52,24 @@ export default function TreatmentTabs({ initialTab = "lashBrow" }: TreatmentTabs
               </p>
             </div>
             {s.description && (
-              <p className="mt-4 text-neutral-600 whitespace-pre-line">{s.description}</p>
-            )}
+      <div className="mt-4 text-neutral-600">
+        {s.description.split("\n\n").map((para, idx) => {
+          // Check if the line starts with a number for a numbered list
+          if (/^\d+\./.test(para.trim())) {
+            const items = para.split("\n").map((line) => line.replace(/^\d+\.\s*/, ""));
+            return (
+              <ol key={idx} className="list-decimal list-inside mt-2">
+                {items.map((item, i) => (
+                  <li key={i}>{item}</li>
+                ))}
+              </ol>
+            );
+          } else {
+            return <p key={idx} className="mt-2">{para}</p>;
+          }
+        })}
+      </div>
+    )}
           </div>
         ))}
       </div>
