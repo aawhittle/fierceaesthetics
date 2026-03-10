@@ -1,93 +1,63 @@
+// app/body-contouring/page.tsx
+import { services } from "@/data/services";
+
 export default function BodyContouringPage() {
+  const bodyContouring = services.bodyContouring;
+
   return (
-    <div className="space-y-16 max-w-4xl">
+    <div className="space-y-16 max-w-4xl mx-auto px-6">
 
       <div>
-        <h1 className="text-5xl font-medium">
-          Body Contouring Treatments
-        </h1>
-
+        <h1 className="text-5xl font-medium">{bodyContouring.sectionTitle}</h1>
         <div
           className="mt-4 h-1 w-40 rounded"
           style={{ backgroundColor: "rgb(var(--gold))" }}
         />
       </div>
 
-      <div className="space-y-10">
-
-        <div className="p-8 rounded-3xl border border-black/5 shadow-sm">
-          <div className="flex justify-between">
-            <h2 className="text-xl font-medium">
-              Tummy Sculpt RF & Cavitation
-            </h2>
-            <span style={{ color: "rgb(var(--gold))" }}>£89</span>
-          </div>
-
-          <p className="mt-4 text-neutral-600">
-            A targeted body contouring treatment using radio frequency
-            and cavitation to help reduce stubborn fat and improve
-            skin firmness across the stomach area.
-          </p>
+      {bodyContouring.intro && (
+        <div className="text-neutral-600 max-w-3xl space-y-2">
+          {bodyContouring.intro.map((p, idx) => (
+            <p key={idx}>{p}</p>
+          ))}
         </div>
+      )}
 
-        <div className="p-8 rounded-3xl border border-black/5 shadow-sm">
-          <div className="flex justify-between">
-            <h2 className="text-xl font-medium">
-              Tummy Sculpt – Skin Tightening
-            </h2>
-            <span style={{ color: "rgb(var(--gold))" }}>£89</span>
+      <div className="space-y-10 mt-8">
+        {bodyContouring.items.map((treatment) => (
+          <div
+            key={treatment.name}
+            className="p-8 rounded-3xl border border-black/5 shadow-sm"
+          >
+            <div className="flex justify-between items-center">
+              <h2 className="text-xl font-medium">{treatment.name}</h2>
+              <span style={{ color: "rgb(var(--gold))" }}>{treatment.price}</span>
+            </div>
+
+
+            <p className="mt-4 text-neutral-600 whitespace-pre-line">
+              {treatment.description}
+            </p>
           </div>
-
-          <p className="mt-4 text-neutral-600">
-            Designed to tighten and firm loose skin on the stomach
-            following weight loss or pregnancy using radio frequency
-            technology to stimulate collagen and elastin.
-          </p>
-        </div>
-
-        <div className="p-8 rounded-3xl border border-black/5 shadow-sm">
-          <div className="flex justify-between">
-            <h2 className="text-xl font-medium">
-              Thigh Sculpt
-            </h2>
-            <span style={{ color: "rgb(var(--gold))" }}>£119</span>
-          </div>
-
-          <p className="mt-4 text-neutral-600">
-            Non-invasive body sculpting treatment designed to target
-            stubborn fat and improve skin tone across the thighs.
-          </p>
-        </div>
-
-        <div className="p-8 rounded-3xl border border-black/5 shadow-sm">
-          <div className="flex justify-between">
-            <h2 className="text-xl font-medium">
-              Arm Sculpt
-            </h2>
-            <span style={{ color: "rgb(var(--gold))" }}>£89</span>
-          </div>
-
-          <p className="mt-4 text-neutral-600">
-            A targeted treatment designed to reduce stubborn fat
-            and improve firmness in the upper arms.
-          </p>
-        </div>
-
-        <div className="p-8 rounded-3xl border border-black/5 shadow-sm">
-          <div className="flex justify-between">
-            <h2 className="text-xl font-medium">
-              Booty Lift
-            </h2>
-            <span style={{ color: "rgb(var(--gold))" }}>£89</span>
-          </div>
-
-          <p className="mt-4 text-neutral-600">
-            A non-invasive treatment designed to lift, firm and
-            sculpt the buttocks using radio frequency and cavitation.
-          </p>
-        </div>
-
+        ))}
       </div>
+
+      {/* Sticky WhatsApp Booking Button */}
+      <a
+        href="https://wa.me/447900783177?text=Hi%20I%E2%80%99d%20like%20to%20book%20a%20Body%20Contouring%20appointment"
+        target="_blank"
+        rel="noreferrer"
+        className="fixed bottom-6 right-6 z-50 h-14 w-14 grid place-items-center rounded-full bg-[rgb(var(--gold))] text-white shadow-lg hover:scale-105 transition-transform"
+        aria-label="Book via WhatsApp"
+      >
+        <svg
+          className="h-6 w-6"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path d="M12 2C6.48 2 2 6.48 2 12a9.93 9.93 0 001.2 4.5L2 22l5.5-1.2A9.93 9.93 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm-.5 14h-1v-6h1v6zm0-8h-1V7h1v1z" />
+        </svg>
+      </a>
     </div>
   );
 }
