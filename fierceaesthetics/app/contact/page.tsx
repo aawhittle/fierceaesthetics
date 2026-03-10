@@ -92,8 +92,8 @@ export default function Contact() {
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2380.525911834457!2d-2.737837!3d53.66227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1700000000000"
       width="100%"
-      height="350"
-      style={{ border: 0 }}
+      height="450"
+      style="border:0; border-radius:1rem;"
       loading="lazy"
       allowFullScreen
       referrerPolicy="no-referrer-when-downgrade"
