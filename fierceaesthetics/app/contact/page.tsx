@@ -90,7 +90,7 @@ export default function Contact() {
     <div className="pt-10 border-t space-y-6">
     <div className="w-full h-[400px] rounded-3xl overflow-hidden shadow-md">
     <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2380.457!2d-2.7384654!3d53.6622687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b12f601653c1f%3A0xee1d270a08dab006!2sOrchard%20View%2C%20New%20Lane%2C%20PR7%206NB!5e0!3m2!1sen!2suk!4v1700000000000"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1182.071286374886!2d-2.7378048000000095!3d53.66225920000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b130c5d5f304f%3A0xf389a241c57053ef!2sFierce%20Aesthetics!5e0!3m2!1sen!2suk!4v1773145683735!5m2!1sen!2suk"
       width="100%"
       height="450"
       style={{ border: "0", borderRadius: "1rem" }}
