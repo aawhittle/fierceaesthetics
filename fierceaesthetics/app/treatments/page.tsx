@@ -94,36 +94,39 @@ export default function TreatmentsPage() {
 
       {/* TREATMENTS */}
 
-      <div className="space-y-8">
+<div className="space-y-8">
 
-        {data.items.map((treatment: typeof data.items[number]) => (
-          <div
-            key={treatment.name}
-            className="p-8 rounded-3xl border border-black/5 shadow-sm hover:shadow-lg transition"
-          >
-            <div className="flex justify-between items-start">
-
-              <h3 className="text-xl font-medium">
-                {treatment.name}
-              </h3>
-
-              <span
-                className="text-lg font-medium"
-                style={{ color: "rgb(var(--gold))" }}
-              >
-                {treatment.price}
-              </span>
-
-            </div>
-
-            <p className="mt-4 text-neutral-600">
-              {treatment.description}
-            </p>
-
-          </div>
-        ))}
-
+  {data.items.map((treatment: typeof data.items[number]) => (
+    <div
+      key={treatment.name}
+      className="
+        p-8 
+        rounded-3xl 
+        bg-white/95 
+        md:bg-white/90 
+        backdrop-blur-lg 
+        border border-black/10 
+        shadow-[0_20px_60px_rgba(0,0,0,0.08)] 
+        hover:shadow-lg 
+        transition
+      "
+    >
+      <div className="flex justify-between items-start">
+        <h3 className="text-xl font-medium">{treatment.name}</h3>
+        <span
+          className="text-lg font-medium"
+          style={{ color: "rgb(var(--gold))" }}
+        >
+          {treatment.price}
+        </span>
       </div>
+
+      <p className="mt-4 text-neutral-600 whitespace-pre-line" style={{ lineHeight: '1.7' }}>
+        {treatment.description}
+      </p>
+    </div>
+  ))}
+</div>
 
       {/* BOOKING */}
 
