@@ -137,6 +137,10 @@ export default function RootLayout({
             <div id="footer-sentinel" className="h-32" />
           </main>
 
+          <footer className="border-t border-black/5 mt-12 py-8 text-center text-sm text-neutral-500">
+            © 2026 AW. All rights reserved.
+          </footer>   
+
         {/* Floating social icons */}
         <FloatingSocials />
       </body>
