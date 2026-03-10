@@ -55,23 +55,14 @@ export default function Contact() {
       </div>
 
     <div className="pt-10 border-t space-y-6">
-
-    <div>
-    <p className="font-medium">Location</p>
-    <p className="text-neutral-600 mt-2">
-      Orchard View<br/>
-      New Lane<br/>
-      PR7 6NB
-     </p>
-    </div>
-
-    <div className="overflow-hidden rounded-3xl border border-black/10">
+    <div className="w-full h-[400px] rounded-3xl overflow-hidden shadow-md">
     <iframe
-      src="https://www.google.com/maps?q=Orchard%20View%20New%20Lane%20PR7%206NB&output=embed"
+      src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2380.525911834457!2d-2.737837!3d53.66227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1700000000000"
       width="100%"
       height="350"
       style={{ border: 0 }}
       loading="lazy"
+      allowFullScreen
       referrerPolicy="no-referrer-when-downgrade"
     />
     </div>
