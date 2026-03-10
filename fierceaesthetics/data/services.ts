@@ -97,7 +97,7 @@ export const services = {
         name: "Million Dollar Professional Clay Mask Collection",
         price: "£49",
         description:
-          "A perfect introduction to the Million Dollar facial system."
+          "Our collection of three active clay masks combines traditional clays with clinically proven ingredients including Azelaic, Mandelic, and Kojic acids. Each mask can be tailored to address specific skin concerns, working alongside our skin peel and ampoule collections to deliver enhanced, radiant results."
       },
       {
         name: "Million Dollar Body",

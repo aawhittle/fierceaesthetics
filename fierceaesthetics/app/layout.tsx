@@ -116,7 +116,7 @@ export default function RootLayout({
       className={`${playfair.variable} ${inter.variable}`}
     >
        <body className="font-[var(--font-inter)] antialiased bg-white text-neutral-900">
-          {/* Mobile Sidebar overlay */}
+          {/* Sidebar Overlay (mobile & desktop) */}
         <Sidebar isOpen={sidebarOpen} onClose={() => setSidebarOpen(false)} />
 
         {/* Mobile toggle button */}
@@ -128,13 +128,6 @@ export default function RootLayout({
           ☰
         </button>
 
-        {/* Page content */}
-        <div className="flex">
-          {/* Desktop sidebar */}
-          <div className="hidden md:block md:w-64 md:flex-shrink-0">
-            <Sidebar isOpen={true} onClose={() => {}} />
-          </div>
-
           {/* Main content */}
           <main
             className={`flex-1 px-6 py-12 max-w-6xl mx-auto transition-transform duration-500 ease-in-out
@@ -143,7 +136,6 @@ export default function RootLayout({
             {children}
             <div id="footer-sentinel" className="h-32" />
           </main>
-        </div>
 
         {/* Floating social icons */}
         <FloatingSocials />
