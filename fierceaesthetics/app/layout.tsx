@@ -120,7 +120,7 @@ export default function RootLayout({
           <SidebarLayout />
 
           {/* Page Content */}
-          <main className="flex-1 px-6 py-12 max-w-6xl mx-auto">
+          <main className="w-full px-6 py-12 max-w-6xl mx-auto relative z-0">
             {children}
           </main>
 
