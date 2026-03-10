@@ -119,9 +119,6 @@ export default function RootLayout({
           {/* Sidebar overlay */}
           <Sidebar isOpen={sidebarOpen} onClose={() => setSidebarOpen(false)} />
 
-          {/* Sidebar */}
-          <SidebarLayout />
-
           {/* Mobile toggle button */}
         <button
           className="fixed top-6 left-6 z-50 md:hidden bg-[rgb(var(--gold))] text-white p-3 rounded-full shadow-lg"
@@ -130,12 +127,21 @@ export default function RootLayout({
           ☰
         </button>
 
-          {/* Page Content */}
-          <main className="relative px-6 py-12 max-w-6xl mx-auto">
+     {/* Page content */}
+        <div className="flex">
+
+          {/* Desktop sidebar */}
+          <div className="hidden md:block md:w-64 md:flex-shrink-0">
+            <Sidebar isOpen={true} onClose={() => {}} />
+          </div>
+
+          {/* Main content */}
+          <main className="flex-1 px-6 py-12 max-w-6xl mx-auto">
             {children}
-             {/* Footer sentinel for floating socials */}
-          <div id="footer-sentinel" className="h-32" />
-        </main>
+            <div id="footer-sentinel" className="h-32" />
+          </main>
+
+        </div>
 
         {/* Floating social icons */}
         <FloatingSocials />
