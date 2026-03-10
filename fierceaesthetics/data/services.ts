@@ -91,25 +91,32 @@ export const services = {
         time: "45 mins",
         price: "£49",
         description:
-          "Manual exfoliation removing dead skin and peach fuzz for a radiant glow."
+          "This manual exfoliation treatment gently removes the outermost layers of dead skin cells and fine vellus hair (“peach fuzz”) using a sterile surgical blade, alongside the professional Million Dollar skincare range. The 45-minute treatment includes a lymphatic drainage massage and a luxurious mask. Dermaplaning enhances the absorption of skincare products, diminishes the appearance of fine lines and wrinkles, stimulates collagen production, and promotes a healthy, radiant complexion. Skin is left smooth, fresh, and glowing."
       },
       {
-        name: "Mini Million Dollar Facial",
-        price: "£44",
+        name: "Million Dollar Professional Clay Mask Collection",
+        price: "£49",
         description:
           "A perfect introduction to the Million Dollar facial system."
       },
       {
-        name: "Million Dollar Facial",
-        price: "£119",
+        name: "Million Dollar Body",
+        price: "89",
         description:
-          "Our signature 10-step treatment designed to refine texture and stimulate collagen."
+          "Million Dollar Body treatments are designed to target areas of concern from the neck down. Using the science of microneedling alongside clinically proven products, this treatment helps improve the appearance of stretch marks, cellulite, and scarring. Our Mesotherapy Body Ampoule contains caffeine and amino acids which provide anti-inflammatory and antioxidant benefits. By creating controlled micro-injuries in the skin, microneedling stimulates the body’s natural repair process, encouraging collagen and elastin production for smoother, firmer skin."
       },
       {
-        name: "Million Dollar Microneedling",
-        price: "£84",
-        description:
-          "Advanced treatment stimulating collagen production and improving skin texture."
+        name: "Million Dollar Miracle Mask",
+        price: "£49",
+       description: `The Mini Million Dollar Facial is the perfect introduction to the Million Dollar facial system. Designed as a starter treatment, it’s ideal for clients wanting to experience professional skincare or maintain results between treatments.
+
+    This relaxing facial improves skin health while providing visible results with minimal downtime.
+
+    Includes LED protocols tailored to your skin concern:
+    1. Assess and Maintain
+    2. Ageing
+    3. Pigmentation
+    4. Problematic Skin`
       }
     ]
   }
