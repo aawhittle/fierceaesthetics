@@ -24,7 +24,17 @@ export default function Contact() {
 
         <a
           href="https://wa.me/447900783177"
-          className="block p-6 rounded-2xl border hover:shadow-md transition"
+           className="
+        p-8 
+        rounded-3xl 
+        bg-white/95 
+        md:bg-white/90 
+        backdrop-blur-lg 
+        border border-black/10 
+        shadow-[0_20px_60px_rgba(0,0,0,0.08)] 
+        hover:shadow-lg 
+        transition
+      "
         >
           <p className="font-medium">WhatsApp Booking</p>
           <p className="text-neutral-600">
@@ -34,7 +44,17 @@ export default function Contact() {
 
         <a
           href="https://instagram.com/fierceaestheticsuk"
-          className="block p-6 rounded-2xl border hover:shadow-md transition"
+           className="
+        p-8 
+        rounded-3xl 
+        bg-white/95 
+        md:bg-white/90 
+        backdrop-blur-lg 
+        border border-black/10 
+        shadow-[0_20px_60px_rgba(0,0,0,0.08)] 
+        hover:shadow-lg 
+        transition
+      "
         >
           <p className="font-medium">Instagram</p>
           <p className="text-neutral-600">
@@ -44,7 +64,17 @@ export default function Contact() {
 
         <a
           href="https://www.facebook.com/fierceaestheticschorley"
-          className="block p-6 rounded-2xl border hover:shadow-md transition"
+           className="
+        p-8 
+        rounded-3xl 
+        bg-white/95 
+        md:bg-white/90 
+        backdrop-blur-lg 
+        border border-black/10 
+        shadow-[0_20px_60px_rgba(0,0,0,0.08)] 
+        hover:shadow-lg 
+        transition
+      "
         >
           <p className="font-medium">Facebook</p>
           <p className="text-neutral-600">
