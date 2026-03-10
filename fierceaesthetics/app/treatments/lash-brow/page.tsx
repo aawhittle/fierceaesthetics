@@ -42,5 +42,5 @@ export default function LashBrowPage() {
       </div>
 
     </div>
-  )
-};
+  );
+}
