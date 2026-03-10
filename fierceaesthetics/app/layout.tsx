@@ -127,7 +127,6 @@ export default function RootLayout({
 
         {/* Floating social icons */}
         <FloatingSocials />
-          </main>
 
       </body>
     </html>
