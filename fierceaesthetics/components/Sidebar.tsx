@@ -1,118 +1,74 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import { useState } from "react"
+import { useState } from "react";
+import Link from "next/link";
 
 export default function Sidebar() {
+  const [open, setOpen] = useState(false);
 
-  const [open, setOpen] = useState(false)
+  const treatmentLinks = [
+    { title: "Lash & Brow Treatments", href: "/treatments/lash-brow" },
+    { title: "Body Contouring Treatments", href: "/treatments/body-contouring" },
+    { title: "Million Dollar Treatments", href: "/treatments/million-dollar" },
+  ];
 
   return (
     <>
-      {/* MOBILE HEADER */}
-      <div className="md:hidden fixed top-0 left-0 right-0 h-16 bg-white border-b flex items-center px-6 z-40">
-        <button
-          onClick={() => setOpen(!open)}
-          className="text-2xl"
-        >
-          ☰
-        </button>
-
-        <p className="ml-4 font-medium tracking-wide">
-          Fierce Aesthetics
-        </p>
-      </div>
-
-      {/* MOBILE MENU */}
-      <div
-        className={`fixed inset-0 bg-white z-50 transform transition-transform duration-300 ${
-          open ? "translate-x-0" : "-translate-x-full"
-        } md:hidden`}
+      {/* Hamburger button (desktop & mobile) */}
+      <button
+        className="fixed top-4 left-4 z-50 md:hidden text-2xl font-bold text-[rgb(var(--gold))] bg-white/70 backdrop-blur-md rounded-full w-12 h-12 grid place-items-center shadow-lg"
+        onClick={() => setOpen(!open)}
+        aria-label="Toggle menu"
       >
+        {open ? "✕" : "☰"}
+      </button>
 
-        <div className="p-8 space-y-6 text-lg">
-
-          <button
-            onClick={() => setOpen(false)}
-            className="text-2xl"
-          >
-            ✕
-          </button>
-
-          <NavLinks close={() => setOpen(false)} />
-
-        </div>
-      </div>
-
-      {/* DESKTOP SIDEBAR */}
-      <aside className="hidden md:flex fixed left-0 top-0 h-screen w-64 border-r bg-white p-10 flex-col justify-between">
-
-        <div className="space-y-10">
-
-          <p className="text-xl font-medium tracking-wide">
+      {/* Sidebar overlay */}
+      <aside
+        className={`
+          fixed top-0 left-0 h-full w-64 bg-white/95 backdrop-blur-md z-50 transform transition-transform duration-300
+          ${open ? "translate-x-0" : "-translate-x-full"}
+          md:translate-x-0 md:shadow-md
+        `}
+      >
+        <div className="px-6 py-10 flex flex-col space-y-6 h-full">
+          <div className="text-2xl font-bold text-[rgb(var(--gold))] mb-10">
             Fierce Aesthetics
-          </p>
+          </div>
 
-          <NavLinks />
+          <nav className="flex flex-col space-y-4 text-lg font-medium">
+            <Link href="/" className="hover:text-[rgb(var(--gold))] transition">Home</Link>
+            <Link href="/about" className="hover:text-[rgb(var(--gold))] transition">About Me</Link>
 
+            <div>
+              <p className="uppercase font-semibold text-sm mb-2">Treatments & Pricing</p>
+              <div className="flex flex-col space-y-2 pl-2">
+                {treatmentLinks.map((t) => (
+                  <Link
+                    key={t.href}
+                    href={t.href}
+                    className="hover:text-[rgb(var(--gold))] transition"
+                    onClick={() => setOpen(false)}
+                  >
+                    {t.title}
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            <Link href="/gallery" className="hover:text-[rgb(var(--gold))] transition">Gallery</Link>
+            <Link href="/contact" className="hover:text-[rgb(var(--gold))] transition">Contact</Link>
+          </nav>
         </div>
-
-        <p className="text-sm text-neutral-400">
-          © Fierce Aesthetics
-        </p>
-
       </aside>
+
+      {/* Overlay background when sidebar is open (mobile) */}
+      {open && (
+        <div
+          className="fixed inset-0 bg-black/25 z-40 md:hidden"
+          onClick={() => setOpen(false)}
+        />
+      )}
     </>
-  )
-}
-
-function NavLinks({ close }: { close?: () => void }) {
-
-  const link = "block text-[rgb(var(--gold))] hover:opacity-70 transition"
-
-  return (
-    <nav className="space-y-4">
-
-      <Link href="/" onClick={close} className={link}>
-        Home
-      </Link>
-
-      <Link href="/about" onClick={close} className={link}>
-        About Me
-      </Link>
-
-      <div className="space-y-2">
-
-        <Link href="/treatments" onClick={close} className={link}>
-          Treatments & Pricing
-        </Link>
-
-        <div className="pl-4 text-sm space-y-1 text-neutral-600">
-
-          <Link href="/treatments/lash-brow" onClick={close}>
-            Lash & Brows
-          </Link>
-
-          <Link href="/treatments/body-contouring" onClick={close}>
-            Body Contouring
-          </Link>
-
-          <Link href="/treatments/million-dollar" onClick={close}>
-            Million Dollar
-          </Link>
-
-        </div>
-
-      </div>
-
-      <Link href="/gallery" onClick={close} className={link}>
-        Gallery
-      </Link>
-
-      <Link href="/contact" onClick={close} className={link}>
-        Contact / Book
-      </Link>
-
-    </nav>
-  )
+  );
 }
