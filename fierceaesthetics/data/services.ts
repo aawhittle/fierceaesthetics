@@ -19,7 +19,7 @@ lashBrow: {
         
         The lashes are gently lifted from the root to create the appearance of longer, fuller lashes, while a bespoke tint deepens the colour for a soft mascara-like finish.
         
-        The result is beautifully lifted, darker lashes that open the eyes and last up to 6–8 weeks."
+        The result is beautifully lifted, darker lashes that open the eyes and last up to 6–8 weeks.
     `
         },
     {
@@ -39,11 +39,11 @@ lashBrow: {
       time: "45 mins",
       price: "£45",
       description: `
-        "The ultimate treatment for fuller, more structured brows.
+        The ultimate treatment for fuller, more structured brows.
         
         Brow lamination works by gently restructuring the brow hairs so they can be lifted and styled into a sleek, uniform shape, creating a fuller and more polished appearance.
         
-        The treatment is completed with a professional brow wax and custom tint to enhance colour, shape, and definition."
+        The treatment is completed with a professional brow wax and custom tint to enhance colour, shape, and definition.
     `
         },
     {
@@ -51,11 +51,11 @@ lashBrow: {
       time: "30 mins",
       price: "£25",
       description: `
-        "A tailored brow grooming treatment designed to shape and define your brows while complementing your natural features.
+        A tailored brow grooming treatment designed to shape and define your brows while complementing your natural features.
         
         Brows are expertly sculpted using precision waxing and enhanced with a bespoke tint to add depth and definition.
         
-        Perfect for maintaining beautifully groomed, balanced brows."
+        Perfect for maintaining beautifully groomed, balanced brows.
     `
     }
   ]
@@ -89,7 +89,7 @@ lashBrow: {
         
         This helps improve skin elasticity, tighten loose or crepey skin, and enhance the overall appearance of the abdominal area.
         
-        Over a course of treatments, the stomach appears firmer, smoother, and more toned, making it an ideal option for clients looking to improve skin laxity without invasive procedures."
+        Over a course of treatments, the stomach appears firmer, smoother, and more toned, making it an ideal option for clients looking to improve skin laxity without invasive procedures.
     `
         },
     {
@@ -100,7 +100,7 @@ lashBrow: {
         
         Using radio frequency and cavitation technology, this treatment helps break down fat cells while encouraging collagen production to smooth and tighten the skin.
         
-        Lymphatic drainage massage is included to help flush toxins and enhance results."
+        Lymphatic drainage massage is included to help flush toxins and enhance results.
     `
         },
     {
@@ -111,7 +111,7 @@ lashBrow: {
         
         Using radio frequency and cavitation technology, this treatment helps break down fat cells while encouraging collagen production to smooth and tighten the skin.
         
-        Lymphatic drainage massage is included to help flush toxins and enhance results."
+        Lymphatic drainage massage is included to help flush toxins and enhance results.
     `
     },
     {
@@ -137,7 +137,7 @@ lashBrow: {
         
         This advanced treatment helps soften the appearance of fine lines and wrinkles, refine skin texture and restore a youthful glow.
         
-        Skin is left feeling smoother, tighter and deeply revitalised, with results continuing to improve with regular treatments."
+        Skin is left feeling smoother, tighter and deeply revitalised, with results continuing to improve with regular treatments.
     `
     }
   ]
@@ -168,7 +168,7 @@ lashBrow: {
       description: `
         Our collection of three active clay masks combines traditional clays with clinically proven ingredients including Azelaic, Mandelic, and Kojic acids.
         
-        Each mask can be tailored to address specific skin concerns, working alongside our skin peel and ampoule collections to deliver enhanced, radiant results."
+        Each mask can be tailored to address specific skin concerns, working alongside our skin peel and ampoule collections to deliver enhanced, radiant results.
     `
         },
     {
@@ -181,7 +181,7 @@ lashBrow: {
         
         Our Mesotherapy Body Ampoule contains caffeine and amino acids which provide anti-inflammatory and antioxidant benefits.
         
-        By creating controlled micro-injuries in the skin, microneedling stimulates the body’s natural repair process, encouraging collagen and elastin production for smoother, firmer skin."
+        By creating controlled micro-injuries in the skin, microneedling stimulates the body’s natural repair process, encouraging collagen and elastin production for smoother, firmer skin.
     `
         },
     {
