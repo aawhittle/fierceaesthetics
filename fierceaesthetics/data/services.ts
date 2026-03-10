@@ -199,6 +199,84 @@ Includes LED protocols tailored to your skin concern:
 3. Pigmentation
 4. Problematic Skin
 `
+      },
+      {
+        name: "Million Dollar Oxy-Pro",
+        time: "45 mins",
+        price: "£54",
+        description: `
+This innovative 45-minute treatment blends scientific skincare with oxygen therapy techniques to deeply revitalise the skin.
+
+The treatment increases oxygen delivery to skin cells, helping reduce stress and inflammation while improving hydration and radiance. Skin appears healthier, more luminous, and revitalised.
+`
+      },
+         {
+        name: "Million Dollar Facial",
+        time: "",
+        price: "£119",
+        description: `
+The signature Million Dollar Facial works from the outside in to exfoliate dead skin cells, remove vellus hair, refine texture, and stimulate natural collagen production.
+
+This 10-step protocol significantly enhances the skin’s absorption of active ingredients—up to 80% more effective than standard facials.
+
+Using the professional Million Dollar product range and lymphatic drainage massage, this treatment helps improve concerns such as fine lines, pigmentation, acne scarring, and dull skin, leaving the complexion brighter, smoother, and more even.
+`
+      },
+       {
+        name: "Million Dollar Microneedling",
+        time: "",
+        price: "£84",
+        description: `
+This advanced treatment creates controlled micro-injuries in the skin without damaging the epidermis, stimulating the body’s natural healing response.
+
+Microneedling helps improve the appearance of acne scarring, fine lines, wrinkles, enlarged pores, pigmentation, stretch marks, and uneven skin texture. When combined with bespoke professional products, it provides powerful skin rejuvenation.
+
+Treatment time varies depending on the area treated.
+`
+      },
+       {
+        name: "Million Dollar Hair Rejuvenation",
+        time: "",
+        price: "£89",
+        description: `
+Million Dollar Hair is a microneedling treatment designed to stimulate hair follicles and encourage healthier hair growth.
+
+The treatment helps reduce flaking, repair damaged hair, and improve overall scalp health. It can be particularly beneficial for those experiencing gradual hair thinning due to ageing, medication, or hormonal changes.
+
+A course of weekly treatments is typically recommended for best results.
+`
+      },
+         {
+        name: "Million Dollar Immaculate Peels",
+        time: "",
+        price: "£69",
+        description: `
+A chemical peel designed to resurface and smooth the skin while addressing concerns such as pigmentation, fine lines, acne, and congestion.
+
+These peels exfoliate the outer layers of dead skin cells to reveal fresher, brighter skin with improved tone and texture. The Immaculate Peel Collection includes medium-depth peels tailored to individual skin concerns.
+`
+      },
+        {
+        name: "Million Dollar Hand Rejuvenation",
+        time: "",
+        price: "£89",
+        description: `
+Our hands experience daily stress and environmental exposure. This 45-minute treatment combines massage, rejuvenating ingredients, and professional techniques to address signs of ageing, pigmentation, and dehydration.
+
+The treatment may include the Regeneration Ampoule to enhance cell renewal or the Radiate Ampoule to help reduce wrinkles and protect against environmental damage.
+`
+      },
+       {
+        name: "Million Dollar Bacial",
+        time: "",
+        price: "£59",
+        description: `
+Maintaining healthy skin extends beyond the face. The Million Dollar Bacial is a 45-minute back treatment designed to improve the appearance and health of the skin on the back.
+
+This treatment deeply cleanses and exfoliates hard-to-reach areas, helping to address common concerns such as clogged pores, back acne, uneven texture, and dehydrated skin.
+
+The result is clearer, smoother, and healthier-looking skin, leaving the back feeling refreshed and revitalised.
+`
       }
     ]
   }
