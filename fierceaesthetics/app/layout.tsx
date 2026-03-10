@@ -121,7 +121,7 @@ export default function RootLayout({
 
         {/* Mobile toggle button */}
         <button
-          className="fixed top-6 left-6 z-50 md:hidden bg-[rgb(var(--gold))] text-white p-3 rounded-full shadow-lg transition-transform active:scale-95"
+          className="fixed top-6 left-6 z-50 bg-[rgb(var(--gold))] text-white p-3 rounded-full shadow-lg md:hidden"
           onClick={() => setSidebarOpen(true)}
           aria-label="Open menu"
         >
