@@ -105,18 +105,21 @@ export const services = {
         description:
           "Million Dollar Body treatments are designed to target areas of concern from the neck down. Using the science of microneedling alongside clinically proven products, this treatment helps improve the appearance of stretch marks, cellulite, and scarring. Our Mesotherapy Body Ampoule contains caffeine and amino acids which provide anti-inflammatory and antioxidant benefits. By creating controlled micro-injuries in the skin, microneedling stimulates the body’s natural repair process, encouraging collagen and elastin production for smoother, firmer skin."
       },
-      {
-        name: "Million Dollar Miracle Mask",
-        price: "£49",
-       description: `The Mini Million Dollar Facial is the perfect introduction to the Million Dollar facial system. Designed as a starter treatment, it’s ideal for clients wanting to experience professional skincare or maintain results between treatments.
+    {
+        name: "Mini Million Dollar Facial",
+        time: "45 mins",
+        price: "£44",
+        description: `
+The Mini Million Dollar Facial is the perfect introduction to the Million Dollar facial system. Designed as a starter treatment, it’s ideal for clients wanting to experience professional skincare or maintain results between treatments.
 
-    This relaxing facial improves skin health while providing visible results with minimal downtime.
+This relaxing facial improves skin health while providing visible results with minimal downtime.
 
-    Includes LED protocols tailored to your skin concern:
-    1. Assess and Maintain
-    2. Ageing
-    3. Pigmentation
-    4. Problematic Skin`
+Includes LED protocols tailored to your skin concern:
+1. Assess and Maintain
+2. Ageing
+3. Pigmentation
+4. Problematic Skin
+`
       }
     ]
   }
