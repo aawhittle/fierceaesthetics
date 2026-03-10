@@ -46,25 +46,25 @@ export const services = {
         name: "Tummy Sculpt RF & Cavitation",
         price: "£89",
         description:
-          "A targeted body contouring treatment using radio frequency and cavitation to reduce stubborn fat and improve skin firmness."
+          "A targeted body contouring treatment using radio frequency and cavitation to help reduce stubborn fat and improve skin firmness across the stomach area./This treatment works by breaking down fat cells while stimulating collagen production to tighten and smooth the skin. Lymphatic drainage massage is included to support the body’s natural detoxification process./nResults include a visibly flatter stomach, improved contour, and firmer-looking skin."
       },
       {
         name: "Thigh Sculpt",
         price: "£119",
         description:
-          "A non-invasive body sculpting treatment designed to target stubborn fat across the thighs."
+          "A non-invasive body sculpting treatment designed to target stubborn fat and improve skin tone across the thighs./n"
       },
       {
         name: "Arm Sculpt",
         price: "£89",
         description:
-          "A targeted treatment designed to reduce stubborn fat and improve skin firmness in the upper arms."
+          "A targeted treatment designed to reduce stubborn fat and improve skin firmness in the upper arms.Using radio frequency and cavitation technology, this treatment helps break down fat cells while encouraging collagen production to smooth and tighten the skin./nLymphatic drainage massage is included to help flush toxins and enhance results."
       },
       {
         name: "Booty Lift",
         price: "£89",
         description:
-          "A non-invasive treatment designed to lift, firm and sculpt the buttocks."
+          "A non-invasive treatment designed to lift, firm and sculpt the buttocks using radio frequency and cavitation technology./nThis treatment helps improve skin laxity while enhancing shape and contour. Lymphatic drainage massage helps boost circulation and support the body’s natural detoxification process."
       }
     ]
   },
