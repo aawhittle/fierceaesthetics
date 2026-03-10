@@ -137,9 +137,12 @@ export default function RootLayout({
             <div id="footer-sentinel" className="h-32" />
           </main>
 
-          <footer className="border-t border-black/5 mt-12 py-8 text-center text-sm text-neutral-500">
-            © 2026 AW. All rights reserved.
-          </footer>   
+         <footer className="mt-20 pt-8 pb-10 text-center border-t border-[rgb(var(--gold))]/30">
+            <p className="text-sm text-neutral-700">
+            &copy; {new Date().getFullYear()} 
+            <span style={{ color: "rgb(var(--gold))" }}>AW</span>. All rights reserved.
+            </p>
+        </footer>
 
         {/* Floating social icons */}
         <FloatingSocials />
