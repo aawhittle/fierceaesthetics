@@ -1,12 +1,22 @@
-import Link from "next/link"
+"use client"
 
-export default function Treatments() {
+import { useState } from "react"
+import { services } from "@/data/services"
 
-  const card =
-    "p-8 rounded-3xl border border-black/5 shadow-sm hover:shadow-lg transition"
+export default function TreatmentsPage() {
+
+  const [active, setActive] = useState<"body" | "brows" | "facial">("body")
+
+  const serviceMap = {
+    body: "bodyContouring",
+    brows: "lashBrow",
+    facial: "millionDollar"
+  } as const
+
+  const data = services[serviceMap[active]]
 
   return (
-    <div className="space-y-16">
+    <div className="max-w-4xl mx-auto space-y-12">
 
       <div>
         <h1 className="text-5xl font-medium">
@@ -19,40 +29,124 @@ export default function Treatments() {
         />
       </div>
 
-      <div className="grid md:grid-cols-3 gap-8">
+      {/* CATEGORY SELECTOR */}
 
-        <Link href="/treatments/lash-brow" className={card}>
-          <h2 className="text-xl font-medium">
-            Lash & Brow Treatments
-          </h2>
+      <div className="flex gap-3 flex-wrap">
 
-          <p className="mt-3 text-neutral-600">
-            Enhance definition with professional brow shaping,
-            tinting and lash lifting.
-          </p>
-        </Link>
+        <button
+          onClick={() => setActive("body")}
+          className={`px-5 py-2 rounded-full border ${
+            active === "body"
+              ? "text-white"
+              : "text-neutral-600"
+          }`}
+          style={{
+            backgroundColor:
+              active === "body"
+                ? "rgb(var(--gold))"
+                : "transparent"
+          }}
+        >
+          Body
+        </button>
 
-        <Link href="/treatments/body-contouring" className={card}>
-          <h2 className="text-xl font-medium">
-            Body Contouring
-          </h2>
+        <button
+          onClick={() => setActive("brows")}
+          className={`px-5 py-2 rounded-full border ${
+            active === "brows"
+              ? "text-white"
+              : "text-neutral-600"
+          }`}
+          style={{
+            backgroundColor:
+              active === "brows"
+                ? "rgb(var(--gold))"
+                : "transparent"
+          }}
+        >
+          Lash & Brow
+        </button>
 
-          <p className="mt-3 text-neutral-600">
-            Target stubborn fat and sculpt the body using
-            advanced non-surgical techniques.
-          </p>
-        </Link>
+        <button
+          onClick={() => setActive("facial")}
+          className={`px-5 py-2 rounded-full border ${
+            active === "facial"
+              ? "text-white"
+              : "text-neutral-600"
+          }`}
+          style={{
+            backgroundColor:
+              active === "facial"
+                ? "rgb(var(--gold))"
+                : "transparent"
+          }}
+        >
+          Million Dollar
+        </button>
 
-        <Link href="/treatments/million-dollar" className={card}>
-          <h2 className="text-xl font-medium">
-            Million Dollar Treatments
-          </h2>
+      </div>
 
-          <p className="mt-3 text-neutral-600">
-            Advanced facials and microneedling treatments
-            delivering radiant skin results.
-          </p>
-        </Link>
+      {/* TITLE */}
+
+      <h2 className="text-3xl font-medium">
+        {data.sectionTitle}
+      </h2>
+
+      {/* TREATMENTS */}
+
+      <div className="space-y-8">
+
+        {data.items.map((treatment: typeof data.items[number]) => (
+          <div
+            key={treatment.name}
+            className="p-8 rounded-3xl border border-black/5 shadow-sm hover:shadow-lg transition"
+          >
+            <div className="flex justify-between items-start">
+
+              <h3 className="text-xl font-medium">
+                {treatment.name}
+              </h3>
+
+              <span
+                className="text-lg font-medium"
+                style={{ color: "rgb(var(--gold))" }}
+              >
+                {treatment.price}
+              </span>
+
+            </div>
+
+            <p className="mt-4 text-neutral-600">
+              {treatment.description}
+            </p>
+
+          </div>
+        ))}
+
+      </div>
+
+      {/* BOOKING */}
+
+      <div className="pt-12 border-t text-center space-y-6">
+
+        <h3 className="text-2xl font-medium">
+          Ready to Book?
+        </h3>
+
+        <p className="text-neutral-600">
+          Contact Fierce Aesthetics to book your appointment
+          or discuss which treatment is best for you.
+        </p>
+
+        <a
+          href="https://wa.me/447900783177?text=Hi%20I%E2%80%99d%20like%20to%20book%20a%20treatment"
+          target="_blank"
+          rel="noreferrer"
+          className="inline-block px-8 py-4 rounded-xl text-white font-medium"
+          style={{ backgroundColor: "rgb(var(--gold))" }}
+        >
+          Book via WhatsApp
+        </a>
 
       </div>
 

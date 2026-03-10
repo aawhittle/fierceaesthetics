@@ -125,7 +125,7 @@ export default function Page() {
           <h2 className="text-4xl font-medium leading-tight mt-12 md:mt-16">Treatments & Pricing</h2>
 
           <div className="mt-8 space-y-16">
-            {services.map((group) => (
+            {Object.values(services).map((group) => (
               <div key={group.sectionTitle}>
                 <h3 className="text-2xl md:text-3xl font-medium tracking-tight">
                   {group.sectionTitle}
@@ -147,7 +147,7 @@ export default function Page() {
                       <div className="flex justify-between items-start gap-6">
                         <div>
                           <p className="text-lg font-medium">{s.name}</p>
-                          {s.time && <p className="text-sm text-neutral-500 mt-1">{s.time}</p>}
+                          {'time' in s && s.time && <p className="text-sm text-neutral-500 mt-1">{s.time}</p>}
                         </div>
                         <p className="text-lg font-medium" style={{ color: "rgb(var(--gold))" }}>
                           {s.price}

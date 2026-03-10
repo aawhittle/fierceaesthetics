@@ -1,5 +1,5 @@
-export const services = [
-  {
+export const services = {
+  lashBrow: {
     sectionTitle: "Lash & Brow Treatments",
     intro: [
       "Beautifully defined lashes and brows can completely transform your look. Our professional lash and brow treatments are designed to enhance your natural features, creating fuller, lifted, and perfectly groomed results with minimal daily maintenance.",
@@ -36,8 +36,7 @@ export const services = [
       }
     ]
   },
-
-  {
+  bodyContouring: {
     sectionTitle: "Body Contouring Treatments",
     intro: [
       "Non-invasive sculpting treatments designed to target stubborn areas, improve skin firmness, and support a smoother, more defined silhouette."
@@ -69,8 +68,7 @@ export const services = [
       }
     ]
   },
-
-  {
+  millionDollar: {
     sectionTitle: "Million Dollar Treatments",
     intro: [
       "Results-driven facial and body treatments using the professional Million Dollar range."
@@ -103,4 +101,4 @@ export const services = [
       }
     ]
   }
-];
+};
