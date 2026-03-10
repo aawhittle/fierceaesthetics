@@ -4,9 +4,17 @@ import { useState } from "react";
 export default function Sidebar() {
   const [open, setOpen] = useState(false);
 
-  return (
+    return (
     <>
-      {/* Overlay background when open (mobile) */}
+      {/* Mobile toggle */}
+      <button
+        className="fixed top-6 left-6 z-50 md:hidden bg-[rgb(var(--gold))] text-white rounded-full p-3 shadow-lg"
+        onClick={() => setOpen(true)}
+      >
+        ☰
+      </button>
+
+      {/* Overlay background */}
       {open && (
         <div
           className="fixed inset-0 bg-black/30 z-40"
@@ -14,12 +22,13 @@ export default function Sidebar() {
         />
       )}
 
+      {/* Sidebar itself */}
       <aside
         className={`
           fixed top-0 left-0 h-full w-64 bg-white/95 backdrop-blur-md z-50 p-6
           transform transition-transform duration-300
-          ${open ? "translate-x-0" : "-translate-x-full"} 
-          md:translate-x-0 md:shadow-lg
+          ${open ? "translate-x-0" : "-translate-x-full"}
+          md:w-64 md:translate-x-0 md:shadow-lg md:hidden
         `}
       >
         <button
@@ -44,14 +53,6 @@ export default function Sidebar() {
           <a href="/contact">Contact</a>
         </nav>
       </aside>
-
-      {/* Mobile toggle button */}
-      <button
-        className="fixed top-6 left-6 z-50 md:hidden bg-[rgb(var(--gold))] text-white rounded-full p-3 shadow-lg"
-        onClick={() => setOpen(true)}
-      >
-        ☰
-      </button>
     </>
   );
 }

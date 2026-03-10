@@ -114,17 +114,13 @@ export default function RootLayout({
     >
        <body className="font-[var(--font-inter)] antialiased bg-white text-neutral-900">
 
-        <div className="flex">
-
           {/* Sidebar */}
           <SidebarLayout />
 
           {/* Page Content */}
-          <main className="w-full px-6 py-12 max-w-6xl mx-auto relative z-0">
+          <main className="relative px-6 py-12 max-w-6xl mx-auto">
             {children}
           </main>
-
-        </div>
 
       </body>
     </html>
