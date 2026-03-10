@@ -43,28 +43,40 @@ export const services = {
     ],
     items: [
       {
-        name: "Tummy Sculpt RF & Cavitation",
+        name: "Tummy Sculpt RF & Cavitation to target fat as well as loose skin",
         price: "£89",
         description:
           "A targeted body contouring treatment using radio frequency and cavitation to help reduce stubborn fat and improve skin firmness across the stomach area./This treatment works by breaking down fat cells while stimulating collagen production to tighten and smooth the skin. Lymphatic drainage massage is included to support the body’s natural detoxification process./nResults include a visibly flatter stomach, improved contour, and firmer-looking skin."
+      },
+    {
+        name: "Tummy Sculpt – Skin Tightening using RF",
+        price: "£89",
+        description:
+          "A targeted treatment designed to tighten and firm loose skin on the stomach following weight loss or pregnancy. Using advanced radio frequency technology, this treatment gently heats the deeper layers of the skin to stimulate collagen and elastin production. This helps improve skin elasticity, tighten loose or crepey skin, and enhance the overall appearance of the abdominal area. Over a course of treatments, the stomach appears firmer, smoother, and more toned, making it an ideal option for clients looking to improve skin laxity without invasive procedures."
       },
       {
         name: "Thigh Sculpt",
         price: "£119",
         description:
-          "A non-invasive body sculpting treatment designed to target stubborn fat and improve skin tone across the thighs./n"
+          "A non-invasive body sculpting treatment designed to target stubborn fat and improve skin tone across the thighs. Using radio frequency and cavitation technology, this treatment helps break down fat cells while encouraging collagen production to smooth and tighten the skin. Lymphatic drainage massage is included to help flush toxins and enhance results."
       },
       {
         name: "Arm Sculpt",
         price: "£89",
         description:
-          "A targeted treatment designed to reduce stubborn fat and improve skin firmness in the upper arms.Using radio frequency and cavitation technology, this treatment helps break down fat cells while encouraging collagen production to smooth and tighten the skin./nLymphatic drainage massage is included to help flush toxins and enhance results."
+          "A targeted treatment designed to reduce stubborn fat and improve skin firmness in the upper arms. Using radio frequency and cavitation technology, this treatment helps break down fat cells while encouraging collagen production to smooth and tighten the skin. Lymphatic drainage massage is included to help flush toxins and enhance results."
       },
       {
         name: "Booty Lift",
         price: "£89",
         description:
-          "A non-invasive treatment designed to lift, firm and sculpt the buttocks using radio frequency and cavitation technology./nThis treatment helps improve skin laxity while enhancing shape and contour. Lymphatic drainage massage helps boost circulation and support the body’s natural detoxification process."
+          "A non-invasive treatment designed to lift, firm and sculpt the buttocks using radio frequency and cavitation technology. This treatment helps improve skin laxity while enhancing shape and contour. Lymphatic drainage massage helps boost circulation and support the body’s natural detoxification process."
+      }
+     {
+        name: "RF Skin Tightening Facial",
+        price: "£89",
+        description:
+          "A luxurious, results-driven facial designed to lift, firm and rejuvenate the skin while promoting long-term skin health. This treatment begins with a full professional facial using the premium Million Dollar skincare range, including deep cleansing, exfoliation and targeted products chosen to suit your skin type. Radio frequency technology is then used to gently heat the deeper layers of the skin, stimulating collagen and elastin production to improve firmness and elasticity. This advanced treatment helps soften the appearance of fine lines and wrinkles, refine skin texture and restore a youthful glow. Skin is left feeling smoother, tighter and deeply revitalised, with results continuing to improve with regular treatments. "
       }
     ]
   },
