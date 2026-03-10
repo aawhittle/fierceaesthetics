@@ -37,13 +37,8 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
             <li><Link href="/" onClick={handleLinkClick}>Home</Link></li>
             <li><Link href="/about" onClick={handleLinkClick}>About Me</Link></li>
             <li>
-              <span>Treatments & Pricing</span>
-              <ul className="pl-4 mt-2 space-y-2 text-neutral-900 font-normal">
-                <li><Link href="/treatments/lash-brow" onClick={handleLinkClick}>Lash & Brow</Link></li>
-                <li><Link href="/treatments/body-contouring" onClick={handleLinkClick}>Body Contouring</Link></li>
-                <li><Link href="/treatments/million-dollar" onClick={handleLinkClick}>Million Dollar</Link></li>
-              </ul>
-            </li>
+             <Link href="/treatments" onClick={handleLinkClick}>Treatments & Pricing</Link>
+             </li>
             <li><Link href="/gallery" onClick={handleLinkClick}>Gallery</Link></li>
             <li><Link href="/contact" onClick={handleLinkClick}>Contact</Link></li>
           </ul>
