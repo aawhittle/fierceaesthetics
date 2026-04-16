@@ -20,7 +20,7 @@ export default function AboutPage() {
     <div className="flex justify-center my-6">
       <div className="p-1 rounded-full bg-gradient-to-tr from-neutral-300 to-neutral-100">
     <img 
-      src="/images/emma.jpg" 
+      src="/images/emma.jpeg" 
       alt="Emma - Fierce Aesthetics"
       className="w-44 h-44 object-cover rounded-full"
     />
