@@ -19,7 +19,7 @@ export default function AboutPage() {
 
       <div className="flex justify-center my-6">
         <img 
-            src="/images/emma.jpeg" 
+            src="public/images/emma.jpeg" 
             alt="Emma - Fierce Aesthetics"
             className="w-44 h-44 object-cover rounded-full shadow-lg"
         />
