@@ -6,7 +6,7 @@ export default function AboutPage() {
       <div
         className="h-1 w-32 rounded"
         style={{ backgroundColor: "rgb(var(--gold))" }}
-      />
+      ></div>
 
       <p className="text-neutral-600 text-lg font-medium">
           Welcome to <span className="font-semibold">Fierce Aesthetics</span>.
@@ -22,5 +22,6 @@ export default function AboutPage() {
       </p>
 
     </div>
+  </section>
   )
 }
