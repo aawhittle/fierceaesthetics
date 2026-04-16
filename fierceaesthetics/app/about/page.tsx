@@ -1,8 +1,12 @@
 export default function AboutPage() {
   return (
    <section className="px-6 py-12">
-      <p className="section-label text-neutral-500">About Me</p>
       <div className="max-w-2xl mx-auto space-y-6">
+
+      {/* Heading */}
+    <h2 className="text-2xl font-bold text-neutral-800">
+      About Me
+    </h2>
 
       <div
         className="h-1 w-32 rounded"
