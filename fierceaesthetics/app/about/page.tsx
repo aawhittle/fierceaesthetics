@@ -17,13 +17,15 @@ export default function AboutPage() {
           Welcome to <span className="font-semibold">Fierce Aesthetics</span>.
       </p>
 
-      <div className="flex justify-center my-6">
-        <img 
-            src="public/images/emma.jpeg" 
-            alt="Emma - Fierce Aesthetics"
-            className="w-44 h-44 object-cover rounded-full shadow-lg"
-        />
+    <div className="flex justify-center my-6">
+      <div className="p-1 rounded-full bg-gradient-to-tr from-neutral-300 to-neutral-100">
+    <img 
+      src="/images/emma.jpg" 
+      alt="Emma - Fierce Aesthetics"
+      className="w-44 h-44 object-cover rounded-full"
+    />
       </div>
+    </div>
 
       <p className="text-neutral-600">
       I’m Emma, the face behind the brand, dedicated to helping you feel confident in your own skin. 
