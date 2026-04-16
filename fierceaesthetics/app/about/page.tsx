@@ -4,7 +4,7 @@ export default function AboutPage() {
       <div className="max-w-2xl mx-auto space-y-6">
 
       {/* Heading */}
-    <h2 className="text-neutral-600 text-lg font-large">
+    <h2 className="text-2xl md:text-3xl font-semibold text-neutral-800">
       About Me
     </h2>
 
