@@ -12,19 +12,14 @@ export default function AboutPage() {
       />
 
       <p className="text-neutral-600 text-lg">
-
       Welcome to Fierce Aesthetics.
-
-      I’m Emma, the face behind the brand, dedicated to helping you feel confident in your own skin.
-      
-      With over ten years experience in the beauty industry, I have trained with some of the industry’s most respected and award-winning brands, including Finishing Touches and Million Dollar Facial. 
-      This has allowed me to develop a highly refined, results led approach, focused on delivering exceptional standards and visible, lasting results.
       </p>
 
       <p className="text-neutral-600">
-        My goal is to create a calm and professional environment
-        where every client receives personalised care and results
-        that boost confidence.
+      I’m Emma, the face behind the brand, dedicated to helping you feel confident in your own skin.\n
+      \n
+      With over ten years experience in the beauty industry, I have trained with some of the industry’s most respected and award-winning brands, including Finishing Touches and Million Dollar Facial. 
+      This has allowed me to develop a highly refined, results led approach, focused on delivering exceptional standards and visible, lasting results.
       </p>
 
     </div>
