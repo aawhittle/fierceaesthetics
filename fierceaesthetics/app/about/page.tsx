@@ -22,12 +22,12 @@ export default function AboutPage() {
 
     <div className="flex justify-center my-6">
       <div className="p-1 rounded-full bg-gradient-to-tr from-neutral-300 to-neutral-100">
-    <image
+    <Image
       src="/images/emma.jpg" 
       alt="Emma - Fierce Aesthetics"
-        width={180}
-          height={180}
-          className="rounded-full object-cover"
+      width={180}
+      height={180}
+      className="rounded-full object-cover"
     />
       </div>
     </div>
